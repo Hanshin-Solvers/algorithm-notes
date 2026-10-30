@@ -1,0 +1,15 @@
+{
+  "array": [
+    "cpp",
+    "java"
+  ],
+  "graph": [],
+  "dag": [],
+  "weighted-graph": [],
+  "tree": [],
+  "bst": [],
+  "mst": [],
+  "graph-direction": [],
+  "graph-density": [],
+  "sorting-reference": []
+}

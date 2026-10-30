@@ -1,0 +1,17 @@
+[
+  {
+    "name": "case-1",
+    "input": "ABCBDAB\nBDCABA\n",
+    "output": "4\n"
+  },
+  {
+    "name": "case-2",
+    "input": "A\nB\n",
+    "output": "0\n"
+  },
+  {
+    "name": "case-3",
+    "input": "AAAA\nAA\n",
+    "output": "2\n"
+  }
+]

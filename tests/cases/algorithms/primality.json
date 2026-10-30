@@ -1,0 +1,22 @@
+[
+  {
+    "name": "case-1",
+    "input": "29\n",
+    "output": "YES\n"
+  },
+  {
+    "name": "case-2",
+    "input": "1\n",
+    "output": "NO\n"
+  },
+  {
+    "name": "case-3",
+    "input": "49\n",
+    "output": "NO\n"
+  },
+  {
+    "name": "case-4",
+    "input": "2\n",
+    "output": "YES\n"
+  }
+]

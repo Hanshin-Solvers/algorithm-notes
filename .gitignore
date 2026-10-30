@@ -1,0 +1,39 @@
+# Local agent instructions and reference material
+/agent.md
+/guidelines/
+/guideline/
+/guildline/
+
+# Local planning documents (plan.md, PLAN_CONTENT.md, PLAN_UI.md, PLAN_STRUCTURE.md)
+/[Pp][Ll][Aa][Nn].[Mm][Dd]
+/[Pp][Ll][Aa][Nn]_*.[Mm][Dd]
+
+# Astro / Node
+/node_modules/
+/.astro/
+/dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# Code verification output: keep generated files in this directory
+/.build/
+__pycache__/
+*.py[cod]
+*.class
+
+# C++ compilation output
+*.exe
+*.o
+*.obj
+*.pdb
+a.out
+
+# Local Python environment
+/.venv/
+
+# Local environment and OS files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

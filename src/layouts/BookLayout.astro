@@ -1,0 +1,52 @@
+---
+import { categories, url, noteUrl } from '../lib/notes';
+import 'katex/dist/katex.min.css';
+import '../styles/book.css';
+import regularFont from '../assets/fonts/NanumGothic-Regular.woff2?url';
+import boldFont from '../assets/fonts/NanumGothic-Bold.woff2?url';
+import interFont from '../assets/fonts/InterVariable.woff2?url';
+interface Props { title: string; description: string; active?: string; category?: string; next?: {title: string; href: string}; }
+const { title, description, active, category = 'data-structures', next } = Astro.props;
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} · 알고리즘 노트</title>
+    <style is:inline set:html={`
+      @font-face { font-family: 'Inter'; src: url('${interFont}') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; unicode-range: U+0000-024F, U+1E00-1EFF; }
+      @font-face { font-family: 'Nanum Gothic'; src: url('${regularFont}') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+      @font-face { font-family: 'Nanum Gothic'; src: url('${boldFont}') format('woff2'); font-weight: 600 800; font-style: normal; font-display: swap; }
+    `} />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#document">본문으로 이동</a>
+    <aside class="sidebar" aria-label="전체 목차">
+      <a class="brand" href={url()}>Algorithm Notes</a>
+      <nav>
+        <a class="category-link" href={url()} aria-current={category === 'overview' ? 'page' : undefined}>0 Overview</a>
+        {categories.map(section => <details class="category" data-menu={section.id} open={section.id === category || category === 'overview'}>
+          <summary>{section.title}</summary>
+          <div class="category-children">
+          {section.groups.map(group => group.direct ? (
+            <a class="chapter-link" href={noteUrl(group.items[0].id)} aria-current={active === group.items[0].id ? 'page' : undefined}>{group.number} {group.title}</a>
+          ) : (
+            <details class="chapter" data-menu={`${section.id}/${group.title}`} open={group.items.some(item => item.id === active)}>
+              <summary>{group.number} {group.title}</summary>
+              <ul>{group.items.map(item => <li><a href={noteUrl(item.id)} aria-current={active === item.id ? 'page' : undefined}><span class="toc-number">{item.number}</span><span class="toc-title">{item.title}</span></a></li>)}</ul>
+            </details>
+          ))}
+          </div>
+        </details>)}
+      </nav>
+    </aside>
+    <main id="document" class="document" tabindex="-1">
+      <div class="document-inner"><slot /></div>
+    </main>
+    {next && <a class="next-page" href={next.href} aria-label={`다음 문서: ${next.title}`} title={`다음: ${next.title}`}><span aria-hidden="true">›</span></a>}
+    <script>import '../scripts/book';</script>
+  </body>
+</html>

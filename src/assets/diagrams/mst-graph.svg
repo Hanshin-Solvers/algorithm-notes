@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="340" viewBox="30 0 650 340" role="img" aria-label="정점 A, B, C, D, E, F와 가중치가 있는 간선 아홉 개로 이루어진 무방향 그래프" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="30" y="0" width="650" height="340" fill="white"/>
+<g>
+<line x1="91.25101125716267" y1="150.26691811834894" x2="188.74898874283733" y2="59.73308188165106" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="94.23545891133695" y1="185.92615871316428" x2="220.76454108866307" y2="269.0738412868357" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="214.10121933088197" y1="68.70853531617382" x2="240.89878066911803" y2="256.2914646838262" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="236.50053490998746" y1="51.77801551554998" x2="363.49946509001256" y2="108.22198448445002" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="264.1433236241317" y1="263.2162179449536" x2="370.8566763758683" y2="141.7837820550464" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="273.9411034030452" y1="286.8473044725348" x2="451.0588965969548" y2="298.1526955274652" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="402.96919426949876" y1="145.93838853899757" x2="467.03080573050124" y2="274.0616114610024" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="417.4564095997717" y1="129.33517926392236" x2="612.5435904002284" y2="195.66482073607764" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="504.9357875713813" y1="285.19437612949235" x2="615.0642124286187" y2="219.80562387050765" stroke="#bdbdbd" stroke-width="2"/>
+<rect x="121.0" y="89.0" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="133.94" y="112.00" font-size="20" fill="#242424">4</text>
+<rect x="138.5" y="211.5" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="151.44" y="234.50" font-size="20" fill="#242424">3</text>
+<rect x="208.5" y="146.5" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="221.44" y="169.50" font-size="20" fill="#242424">7</text>
+<rect x="281.0" y="64.0" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="293.94" y="87.00" font-size="20" fill="#242424">2</text>
+<rect x="298.5" y="186.5" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="311.44" y="209.50" font-size="20" fill="#242424">5</text>
+<rect x="343.5" y="276.5" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="356.44" y="299.50" font-size="20" fill="#242424">8</text>
+<rect x="416.0" y="194.0" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="428.94" y="217.00" font-size="20" fill="#242424">6</text>
+<rect x="496.0" y="146.5" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="508.94" y="169.50" font-size="20" fill="#242424">9</text>
+<rect x="541.0" y="236.5" width="38" height="32" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="553.94" y="259.50" font-size="20" fill="#242424">1</text>
+<circle cx="70" cy="170" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="62.00" y="177.70" font-size="22" fill="#242424">A</text>
+<circle cx="210" cy="40" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="203.33" y="47.70" font-size="22" fill="#242424">B</text>
+<circle cx="245" cy="285" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="237.61" y="292.70" font-size="22" fill="#242424">C</text>
+<circle cx="390" cy="120" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="382.00" y="127.70" font-size="22" fill="#242424">D</text>
+<circle cx="480" cy="300" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="473.66" y="307.70" font-size="22" fill="#242424">E</text>
+<circle cx="640" cy="205" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="634.47" y="212.70" font-size="22" fill="#242424">F</text>
+</g></svg>

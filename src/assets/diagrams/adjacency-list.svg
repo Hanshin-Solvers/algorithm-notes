@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="252" viewBox="-71 -13 214 252" role="img" aria-label="1의 이웃은 2, 3이고 2의 이웃은 1, 3의 이웃은 1, 4, 4의 이웃은 3인 인접 리스트" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-71" y="-13" width="214" height="252" fill="white"/>
+<g>
+<text x="-59.38" y="30.00" font-size="20" fill="#242424">g[1]</text>
+<rect x="0" y="0" width="65" height="46" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="25.83" y="30.70" font-size="22" fill="#242424">2</text>
+<rect x="65" y="0" width="65" height="46" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="90.83" y="30.70" font-size="22" fill="#242424">3</text>
+<text x="-59.38" y="90.00" font-size="20" fill="#242424">g[2]</text>
+<rect x="0" y="60" width="65" height="46" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="25.83" y="90.70" font-size="22" fill="#242424">1</text>
+<text x="-59.38" y="150.00" font-size="20" fill="#242424">g[3]</text>
+<rect x="0" y="120" width="65" height="46" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="25.83" y="150.70" font-size="22" fill="#242424">1</text>
+<rect x="65" y="120" width="65" height="46" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="90.83" y="150.70" font-size="22" fill="#242424">4</text>
+<text x="-59.38" y="210.00" font-size="20" fill="#242424">g[4]</text>
+<rect x="0" y="180" width="65" height="46" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="25.83" y="210.70" font-size="22" fill="#242424">3</text>
+</g></svg>

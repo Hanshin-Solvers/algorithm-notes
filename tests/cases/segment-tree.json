@@ -1,0 +1,12 @@
+[
+  {
+    "name": "case-1",
+    "input": "5 4\n2 4 1 5 3\nsum 1 4\nset 2 10\nsum 1 4\nsum 0 5\n",
+    "output": "10\n19\n24\n"
+  },
+  {
+    "name": "case-2",
+    "input": "1 4\n5\nsum 0 1\nset 0 30\nsum 0 1\nsum 0 0\n",
+    "output": "5\n30\n0\n"
+  }
+]

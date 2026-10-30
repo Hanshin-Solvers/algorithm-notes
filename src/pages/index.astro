@@ -1,0 +1,16 @@
+---
+import BookLayout from '../layouts/BookLayout.astro';
+import { entries, noteUrl } from '../lib/notes';
+---
+<BookLayout title="개요" description="대회 참가자를 위한 자료구조·알고리즘·유틸리티 노트입니다." category="overview" next={{title:entries[0].title,href:noteUrl(entries[0].id)}}>
+  <header class="page-header"><h1>0 Overview</h1></header>
+  <article class="prose">
+    <p>대회 참가자가 참고할 수 있도록 자료구조, 알고리즘, 언어별 유틸리티를 정리한 노트입니다.</p>
+    <h2>1 Data Structures</h2>
+    <p>데이터를 저장하는 구조와 주요 연산을 설명합니다. 배열, 스택, 큐, 집합과 맵, 우선순위 큐, 그래프와 트리 등을 다룹니다.</p>
+    <h2>2 Algorithms</h2>
+    <p>문제를 해결하는 절차와 구현 방법을 다루는 분류입니다. 정수론, 정렬, 탐색, 동적 계획법, 그래프 알고리즘 등을 포함합니다.</p>
+    <h2>3 Utilities</h2>
+    <p>문제 풀이에 필요한 기초 개념과 언어별 도구를 다루는 분류입니다. 시간복잡도, 빠른 입출력, 문자열 기본 조작 등을 포함합니다.</p>
+  </article>
+</BookLayout>

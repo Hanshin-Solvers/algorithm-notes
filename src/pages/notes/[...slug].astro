@@ -1,0 +1,36 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BookLayout from '../../layouts/BookLayout.astro';
+import CodeTabs from '../../components/CodeTabs.astro';
+import { entries, hasExample, loadExample, noteUrl } from '../../lib/notes';
+export async function getStaticPaths() {
+  const notes = await getCollection('notes');
+  if (notes.length !== entries.length) throw new Error('Every navigation entry must have one document.');
+  return entries.map(item => {
+    const note = notes.find(note => note.id === `${item.category}/${item.id}` && note.data.topic === item.id);
+    if (!note) throw new Error(`Missing document: ${item.id}`);
+    return { params: { slug: note.id }, props: { note } };
+  });
+}
+interface Props { note: CollectionEntry<'notes'>; }
+const { note } = Astro.props;
+const { Content } = await render(note);
+const position = entries.findIndex(item => item.id === note.data.topic);
+const item = entries[position];
+const following = entries[position + 1];
+const example = hasExample(item.id) ? await loadExample(item.id) : null;
+const sample = example?.sample;
+---
+<BookLayout title={note.data.title} description={note.data.description} active={item.id} category={item.category} next={following ? { title: following.title, href: noteUrl(following.id) } : undefined}>
+  <header class="page-header">
+    <p class="breadcrumb">{item.categoryTitle}{item.group && <><span>/</span>{item.group}</>}</p>
+    <h1><span class="heading-number">{item.number}</span> {item.title}</h1>
+  </header>
+  <article class:list={["prose", { "prose--section-dividers": ['array', 'dynamic-array'].includes(item.id) }]}><Content /></article>
+  {sample && <div class="example-io" aria-label="예제 입출력">
+    <section><h3>예제 입력</h3><pre>{sample.input}</pre></section>
+    <section><h3>예제 출력</h3><pre>{sample.output}</pre></section>
+  </div>}
+  {example && <CodeTabs topic={item.id} />}
+</BookLayout>

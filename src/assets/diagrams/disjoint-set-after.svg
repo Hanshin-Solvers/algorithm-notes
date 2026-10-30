@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="466" height="106" viewBox="-13 -13 466 106" role="img" aria-label="집합 1, 2, 3과 집합 4, 5" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-13" y="-13" width="466" height="106" fill="white"/>
+<g>
+<rect x="0" y="0" width="230" height="80" rx="14" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="2"/>
+<circle cx="45" cy="40" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="38.33" y="47.70" font-size="22" fill="#242424">1</text>
+<circle cx="115" cy="40" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="108.33" y="47.70" font-size="22" fill="#242424">2</text>
+<circle cx="185" cy="40" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="178.33" y="47.70" font-size="22" fill="#242424">3</text>
+<rect x="280" y="0" width="160" height="80" rx="14" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="2"/>
+<circle cx="325" cy="40" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="318.33" y="47.70" font-size="22" fill="#242424">4</text>
+<circle cx="395" cy="40" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="388.33" y="47.70" font-size="22" fill="#242424">5</text>
+</g></svg>

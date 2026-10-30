@@ -1,0 +1,17 @@
+[
+  {
+    "name": "case-1",
+    "input": "60\n",
+    "output": "2 2 3 5\n"
+  },
+  {
+    "name": "case-2",
+    "input": "13\n",
+    "output": "13\n"
+  },
+  {
+    "name": "case-3",
+    "input": "64\n",
+    "output": "2 2 2 2 2 2\n"
+  }
+]

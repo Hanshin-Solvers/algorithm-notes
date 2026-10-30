@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="318" height="163" viewBox="-65 -21 318 163" role="img" aria-label="두 번째 행의 세 번째 값이 9인 배열" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-65" y="-21" width="318" height="163" fill="white"/>
+<g>
+<text x="24.48" y="5.95" font-size="17" fill="#666666">열 0</text>
+<text x="104.48" y="5.95" font-size="17" fill="#666666">열 1</text>
+<text x="184.48" y="5.95" font-size="17" fill="#666666">열 2</text>
+<text x="-53.52" y="50.95" font-size="17" fill="#666666">행 0</text>
+<rect x="0" y="17" width="80" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="33.33" y="52.70" font-size="22" fill="#242424">1</text>
+<rect x="80" y="17" width="80" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="113.33" y="52.70" font-size="22" fill="#242424">2</text>
+<rect x="160" y="17" width="80" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="193.33" y="52.70" font-size="22" fill="#242424">3</text>
+<text x="-53.52" y="106.95" font-size="17" fill="#666666">행 1</text>
+<rect x="0" y="73" width="80" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="33.33" y="108.70" font-size="22" fill="#242424">4</text>
+<rect x="80" y="73" width="80" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="113.33" y="108.70" font-size="22" fill="#242424">5</text>
+<rect x="160" y="73" width="80" height="56" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="193.33" y="108.70" font-size="22" fill="white">9</text>
+</g></svg>

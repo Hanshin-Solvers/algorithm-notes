@@ -1,0 +1,17 @@
+[
+  {
+    "name": "case-1",
+    "input": "5 2\n",
+    "output": "10\n"
+  },
+  {
+    "name": "case-2",
+    "input": "0 0\n",
+    "output": "1\n"
+  },
+  {
+    "name": "case-3",
+    "input": "30 15\n",
+    "output": "155117520\n"
+  }
+]

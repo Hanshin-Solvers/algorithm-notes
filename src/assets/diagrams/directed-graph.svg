@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="230" viewBox="290 90 380 230" role="img" aria-label="A에서 B로, B에서 C로, C에서 D로 향하는 화살표." font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="290" y="90" width="380" height="230" fill="white"/>
+<g>
+<line x1="359.0" y1="130.0" x2="601.0" y2="130.0" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="601.0,130.0 590.1946347717678,135.21958640933477 590.1946347717678,124.78041359066523" fill="#bdbdbd"/>
+<line x1="630.0" y1="159.0" x2="630.0" y2="251.0" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="630.0,251.0 624.7804135906653,240.19463477176788 635.2195864093347,240.19463477176788" fill="#bdbdbd"/>
+<line x1="601.0" y1="280.0" x2="359.0" y2="280.0" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="359.0,280.0 369.8053652282321,274.78041359066526 369.8053652282321,285.21958640933474" fill="#bdbdbd"/>
+<circle cx="330" cy="130" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="322.00" y="137.70" font-size="22" fill="#242424">A</text>
+<circle cx="630" cy="130" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="623.33" y="137.70" font-size="22" fill="#242424">B</text>
+<circle cx="630" cy="280" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="622.61" y="287.70" font-size="22" fill="#242424">C</text>
+<circle cx="330" cy="280" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="322.00" y="287.70" font-size="22" fill="#242424">D</text>
+</g></svg>

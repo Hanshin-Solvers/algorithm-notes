@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="166" viewBox="70 -40 320 166" role="img" aria-label="루트 1의 두 자식이 4, 5인 최소 힙" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="70" y="-40" width="320" height="166" fill="white"/>
+<g>
+<line x1="206.428303300355" y1="16.89304930141225" x2="133.571696699645" y2="69.10695069858775" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="253.571696699645" y1="16.89304930141225" x2="326.428303300355" y2="69.10695069858775" stroke="#bdbdbd" stroke-width="2"/>
+<circle cx="230" cy="0" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="223.33" y="7.70" font-size="22" fill="#242424">1</text>
+<circle cx="110" cy="86" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="103.33" y="93.70" font-size="22" fill="#242424">4</text>
+<circle cx="350" cy="86" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="343.33" y="93.70" font-size="22" fill="#242424">5</text>
+</g></svg>

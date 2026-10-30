@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Linear Data Structures",
+    "items": [
+      {
+        "id": "array",
+        "title": "Array"
+      },
+      {
+        "id": "dynamic-array",
+        "title": "Dynamic Array"
+      },
+      {
+        "id": "stack",
+        "title": "Stack"
+      },
+      {
+        "id": "queue",
+        "title": "Queue"
+      },
+      {
+        "id": "deque",
+        "title": "Deque"
+      }
+    ]
+  },
+  {
+    "title": "Associative Containers",
+    "items": [
+      {
+        "id": "set",
+        "title": "Set"
+      },
+      {
+        "id": "map",
+        "title": "Map"
+      }
+    ]
+  },
+  {
+    "id": "priority-queue",
+    "title": "Priority Queue & Heap"
+  },
+  {
+    "title": "Graphs",
+    "items": [
+      {
+        "id": "graph",
+        "title": "Concept"
+      },
+      {
+        "id": "graph-direction",
+        "title": "Undirected & Directed"
+      },
+      {
+        "id": "graph-density",
+        "title": "Complete, Dense & Sparse"
+      },
+      {
+        "id": "dag",
+        "title": "DAG"
+      },
+      {
+        "id": "weighted-graph",
+        "title": "Weighted Graph"
+      }
+    ]
+  },
+  {
+    "title": "Trees",
+    "items": [
+      {
+        "id": "tree",
+        "title": "Concept"
+      },
+      {
+        "id": "bst",
+        "title": "BST"
+      },
+      {
+        "id": "mst",
+        "title": "MST"
+      },
+      {
+        "id": "segment-tree",
+        "title": "Segment Tree"
+      }
+    ]
+  },
+  {
+    "id": "disjoint-set",
+    "title": "Disjoint Set"
+  }
+]

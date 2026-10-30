@@ -1,0 +1,67 @@
+[
+  {
+    "id": "submission-template",
+    "title": "Submission Template"
+  },
+  {
+    "title": "Input & Output",
+    "items": [
+      {
+        "id": "basic-io",
+        "title": "Basic I/O"
+      },
+      {
+        "id": "fast-io",
+        "title": "Fast I/O"
+      },
+      {
+        "id": "test-cases",
+        "title": "Multiple Test Cases"
+      },
+      {
+        "id": "eof-input",
+        "title": "EOF Input"
+      }
+    ]
+  },
+  {
+    "id": "complexity",
+    "title": "Time & Space Complexity"
+  },
+  {
+    "id": "numeric-types",
+    "title": "Numeric Types & Overflow"
+  },
+  {
+    "id": "division-modulo",
+    "title": "Division & Modulo"
+  },
+  {
+    "id": "type-conversion",
+    "title": "Character & Number Conversion"
+  },
+  {
+    "id": "string-operations",
+    "title": "String Operations"
+  },
+  {
+    "id": "container-operations",
+    "title": "Container Operations"
+  },
+  {
+    "id": "sorting-reference",
+    "title": "Sorting Reference"
+  },
+  {
+    "id": "bit-operations",
+    "title": "Bit Operations"
+  },
+  {
+    "id": "grid-directions",
+    "title": "Grid Directions"
+  },
+  {
+    "id": "debugging",
+    "title": "Debugging & Timing"
+  }
+]

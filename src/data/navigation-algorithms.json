@@ -1,0 +1,233 @@
+[
+  {
+    "title": "Number Theory",
+    "items": [
+      {
+        "id": "gcd-lcm",
+        "title": "GCD & LCM"
+      },
+      {
+        "id": "divisors",
+        "title": "Divisors"
+      },
+      {
+        "id": "primality",
+        "title": "Primality Test"
+      },
+      {
+        "id": "sieve",
+        "title": "Sieve of Eratosthenes"
+      },
+      {
+        "id": "factorization",
+        "title": "Prime Factorization"
+      },
+      {
+        "id": "base-conversion",
+        "title": "Base Conversion"
+      }
+    ]
+  },
+  {
+    "id": "combinatorics",
+    "title": "Combinatorics"
+  },
+  {
+    "id": "sorting",
+    "title": "Sorting"
+  },
+  {
+    "id": "brute-force",
+    "title": "Brute Force & Recursion"
+  },
+  {
+    "id": "dfs",
+    "title": "DFS"
+  },
+  {
+    "id": "bfs",
+    "title": "BFS"
+  },
+  {
+    "id": "backtracking",
+    "title": "Backtracking"
+  },
+  {
+    "title": "Divide & Conquer",
+    "items": [
+      {
+        "id": "power",
+        "title": "Exponentiation"
+      },
+      {
+        "id": "matrix-power",
+        "title": "Matrix Multiplication & Power"
+      },
+      {
+        "id": "merge-sort",
+        "title": "Merge Sort"
+      }
+    ]
+  },
+  {
+    "title": "Binary & Parametric Search",
+    "items": [
+      {
+        "id": "binary-search",
+        "title": "Binary Search"
+      },
+      {
+        "id": "parametric-search",
+        "title": "Parametric Search"
+      }
+    ]
+  },
+  {
+    "id": "greedy",
+    "title": "Greedy"
+  },
+  {
+    "title": "Sliding Window & Two Pointers",
+    "items": [
+      {
+        "id": "sliding-window",
+        "title": "Sliding Window"
+      },
+      {
+        "id": "two-pointers",
+        "title": "Two Pointers"
+      }
+    ]
+  },
+  {
+    "title": "Prefix Sums",
+    "items": [
+      {
+        "id": "prefix-sum",
+        "title": "Prefix Sum"
+      },
+      {
+        "id": "prefix-grid",
+        "title": "2D Prefix Sum"
+      },
+      {
+        "id": "difference-array",
+        "title": "Difference Array"
+      }
+    ]
+  },
+  {
+    "title": "Dynamic Programming",
+    "items": [
+      {
+        "id": "dp-basics",
+        "title": "State & Transition"
+      },
+      {
+        "id": "grid-dp",
+        "title": "Grid DP"
+      }
+    ]
+  },
+  {
+    "title": "DP Applications",
+    "items": [
+      {
+        "id": "knapsack",
+        "title": "Knapsack"
+      },
+      {
+        "id": "lis",
+        "title": "LIS"
+      },
+      {
+        "id": "lcs",
+        "title": "LCS"
+      },
+      {
+        "id": "binomial",
+        "title": "Binomial Coefficients"
+      }
+    ]
+  },
+  {
+    "title": "Graph Algorithms",
+    "items": [
+      {
+        "id": "bipartite",
+        "title": "Bipartite Check"
+      },
+      {
+        "id": "topological-sort",
+        "title": "Topological Sort"
+      },
+      {
+        "id": "dijkstra",
+        "title": "Dijkstra & Path Restoration"
+      },
+      {
+        "id": "bellman-ford",
+        "title": "Bellman–Ford"
+      },
+      {
+        "id": "floyd-warshall",
+        "title": "Floyd–Warshall"
+      },
+      {
+        "id": "kruskal",
+        "title": "Kruskal"
+      }
+    ]
+  },
+  {
+    "title": "Tree Algorithms",
+    "items": [
+      {
+        "id": "tree-traversal",
+        "title": "Traversal & Subtree Size"
+      },
+      {
+        "id": "tree-diameter",
+        "title": "Tree Diameter"
+      }
+    ]
+  },
+  {
+    "title": "String Algorithms",
+    "items": [
+      {
+        "id": "palindrome",
+        "title": "Palindrome"
+      },
+      {
+        "id": "pattern-search",
+        "title": "Naive Pattern Search"
+      },
+      {
+        "id": "kmp",
+        "title": "KMP"
+      }
+    ]
+  },
+  {
+    "title": "Geometry",
+    "items": [
+      {
+        "id": "ccw",
+        "title": "Vectors & CCW"
+      },
+      {
+        "id": "segment-intersection",
+        "title": "Segment Intersection"
+      },
+      {
+        "id": "polygon-area",
+        "title": "Polygon Area"
+      },
+      {
+        "id": "convex-hull",
+        "title": "Convex Hull"
+      }
+    ]
+  }
+]

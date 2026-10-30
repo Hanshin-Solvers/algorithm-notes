@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="266" viewBox="-40 -40 400 266" role="img" aria-label="루트 1의 자식은 2, 3이고 정점 2의 자식은 4, 5인 트리" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-40" y="-40" width="400" height="266" fill="white"/>
+<g>
+<line x1="177.07796348691792" y1="17.764578297638604" x2="102.92203651308208" y2="75.23542170236139" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="222.92203651308208" y1="17.764578297638604" x2="297.07796348691795" y2="75.23542170236139" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="61.0881435028925" y1="114.98503317788747" x2="18.9118564971075" y2="164.01496682211254" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="98.9118564971075" y1="114.98503317788747" x2="141.0881435028925" y2="164.01496682211254" stroke="#bdbdbd" stroke-width="2"/>
+<circle cx="200" cy="0" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="193.33" y="7.70" font-size="22" fill="#242424">1</text>
+<circle cx="80" cy="93" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="73.33" y="100.70" font-size="22" fill="#242424">2</text>
+<circle cx="320" cy="93" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="313.33" y="100.70" font-size="22" fill="#242424">3</text>
+<circle cx="0" cy="186" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="-6.67" y="193.70" font-size="22" fill="#242424">4</text>
+<circle cx="160" cy="186" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="153.33" y="193.70" font-size="22" fill="#242424">5</text>
+</g></svg>

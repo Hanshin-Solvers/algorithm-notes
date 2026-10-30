@@ -1,0 +1,12 @@
+[
+  {
+    "name": "case-1",
+    "input": "5\napple\npear\napple\nbanana\npear\n",
+    "output": "apple 2\nbanana 1\npear 2\n"
+  },
+  {
+    "name": "case-2",
+    "input": "0\n",
+    "output": ""
+  }
+]

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="230" viewBox="230 90 500 230" role="img" aria-label="A에서 B와 C로, B와 C에서 D로 향하며 방향 사이클이 없는 구조." font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="230" y="90" width="500" height="230" fill="white"/>
+<g>
+<line x1="297.23456271148933" y1="195.03613559335756" x2="447.76543728851067" y2="139.96386440664244" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="447.76543728851067,139.96386440664244 439.41122536825316,148.5782212132431 435.82451838609,138.77455546199724" fill="#bdbdbd"/>
+<line x1="297.23456271148933" y1="214.96386440664244" x2="447.76543728851067" y2="270.0361355933576" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="447.76543728851067,270.0361355933576 435.82451838609,271.2254445380028 439.41122536825316,261.42177878675693" fill="#bdbdbd"/>
+<line x1="502.3818052619275" y1="139.55179253323053" x2="662.6181947380725" y2="195.44820746676947" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="662.6181947380725,195.44820746676947 650.6965804982556,196.81755545650574 654.13495335972,186.96088658697414" fill="#bdbdbd"/>
+<line x1="502.3818052619275" y1="270.4482074667695" x2="662.6181947380725" y2="214.55179253323053" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="662.6181947380725,214.55179253323053 654.13495335972,223.03911341302586 650.6965804982556,213.18244454349426" fill="#bdbdbd"/>
+<circle cx="270" cy="205" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="262.00" y="212.70" font-size="22" fill="#242424">A</text>
+<circle cx="475" cy="130" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="468.33" y="137.70" font-size="22" fill="#242424">B</text>
+<circle cx="475" cy="280" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="467.61" y="287.70" font-size="22" fill="#242424">C</text>
+<circle cx="690" cy="205" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="682.00" y="212.70" font-size="22" fill="#242424">D</text>
+</g></svg>

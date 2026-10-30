@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="205" height="362" viewBox="-13 -293 205 362" role="img" aria-label="아래에서부터 10, 20, 30, 40, 50, 60인 스택" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-13" y="-293" width="205" height="362" fill="white"/>
+<g>
+<rect x="0" y="0" width="100" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="36.67" y="35.70" font-size="22" fill="#242424">10</text>
+<rect x="0" y="-56" width="100" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="36.67" y="-20.30" font-size="22" fill="#242424">20</text>
+<rect x="0" y="-112" width="100" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="36.67" y="-76.30" font-size="22" fill="#242424">30</text>
+<rect x="0" y="-168" width="100" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="36.67" y="-132.30" font-size="22" fill="#242424">40</text>
+<rect x="0" y="-224" width="100" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="36.67" y="-188.30" font-size="22" fill="#242424">50</text>
+<rect x="0" y="-280" width="100" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="36.67" y="-244.30" font-size="22" fill="#242424">60</text>
+<text x="149.25" y="-245.00" font-size="20" fill="#666666">top</text>
+<line x1="140" y1="-252" x2="110" y2="-252" stroke="#505050" stroke-width="2"/>
+<polygon points="110,-252 120.80536522823212,-257.21958640933474 120.80536522823212,-246.78041359066523" fill="#505050"/>
+</g></svg>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "case-1",
+    "input": "abcdef\n2 4\n",
+    "output": "bcd\n"
+  },
+  {
+    "name": "case-2",
+    "input": "a\n1 1\n",
+    "output": "a\n"
+  },
+  {
+    "name": "case-3",
+    "input": "algorithm\n1 9\n",
+    "output": "algorithm\n"
+  },
+  {
+    "name": "case-4",
+    "input": "banana\n6 6\n",
+    "output": "a\n"
+  }
+]

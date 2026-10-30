@@ -1,0 +1,7 @@
+[
+  {
+    "name": "case-1",
+    "input": "9\npush_back 10\npush_front 20\nfront\nback\npop_back\nsize\npop_front\npop_front\nsize\n",
+    "output": "20\n10\n10\n1\n20\nEMPTY\n0\n"
+  }
+]

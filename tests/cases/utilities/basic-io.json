@@ -1,0 +1,20 @@
+[
+  {
+    "name": "case-1",
+    "input": "HELLO WORLD\n3 5\n",
+    "output": "HELLO WORLD\n8\n",
+    "compare": "exact"
+  },
+  {
+    "name": "case-2",
+    "input": "A\n1 2\n",
+    "output": "A\n3\n",
+    "compare": "exact"
+  },
+  {
+    "name": "case-3",
+    "input": "  TWO  WORDS  \n9 4\n",
+    "output": "  TWO  WORDS  \n13\n",
+    "compare": "exact"
+  }
+]

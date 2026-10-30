@@ -1,0 +1,13 @@
+---
+import BookLayout from '../layouts/BookLayout.astro';
+import { utilityNavigation, noteUrl } from '../lib/notes';
+---
+<BookLayout title="유틸리티" description="유틸리티 학습 노트" category="utilities" next={{ title: utilityNavigation[0].items[0].title, href: noteUrl(utilityNavigation[0].items[0].id) }}>
+  <header class="page-header"><h1>3 Utilities</h1></header>
+  <div class="chapter-list">
+    {utilityNavigation.map(group => <section>
+      <h2>{group.number} {group.title}</h2>
+      <ul>{group.items.map(item => <li><a href={noteUrl(item.id)}><span>{item.number}</span>{item.title}<span aria-hidden="true">›</span></a></li>)}</ul>
+    </section>)}
+  </div>
+</BookLayout>

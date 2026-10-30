@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="167" viewBox="-13 -21 336 167" role="img" aria-label="apple의 값은 1, pear의 값은 2인 맵" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-13" y="-21" width="336" height="167" fill="white"/>
+<g>
+<text x="61.54" y="6.30" font-size="18" fill="#666666">키</text>
+<text x="256.54" y="6.30" font-size="18" fill="#666666">값</text>
+<rect x="0" y="20" width="140" height="48" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="42.02" y="51.70" font-size="22" fill="#242424">apple</text>
+<line x1="155" y1="44" x2="205" y2="44" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="205,44 194.19463477176788,49.21958640933477 194.19463477176788,38.78041359066523" fill="#bdbdbd"/>
+<rect x="220" y="20" width="90" height="48" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="258.33" y="51.70" font-size="22" fill="#242424">1</text>
+<rect x="0" y="85" width="140" height="48" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="47.35" y="116.70" font-size="22" fill="#242424">pear</text>
+<line x1="155" y1="109" x2="205" y2="109" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="205,109 194.19463477176788,114.21958640933477 194.19463477176788,103.78041359066523" fill="#bdbdbd"/>
+<rect x="220" y="85" width="90" height="48" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="258.33" y="116.70" font-size="22" fill="#242424">2</text>
+</g></svg>

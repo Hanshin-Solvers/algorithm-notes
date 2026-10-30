@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="261" viewBox="264 70 432 261" role="img" aria-label="다섯 정점 사이의 일부 쌍만 연결된 구조." font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="264" y="70" width="432" height="261" fill="white"/>
+<g>
+<line x1="506.99300072790345" y1="120.60084485800083" x2="628.9524547867" y2="168.49745570450443" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="641.0049537366082" y1="203.9535094053559" x2="603.6807734521028" y2="266.0464905946441" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="559.7402716741076" y1="290.90169943749476" x2="400.2597283258925" y2="290.90169943749476" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="356.31922654789724" y1="266.0464905946441" x2="318.9950462633919" y2="203.9535094053559" stroke="#bdbdbd" stroke-width="2"/>
+<circle cx="480.0" cy="110.0" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="473.33" y="117.70" font-size="22" fill="#242424">1</text>
+<circle cx="655.9454555146034" cy="179.09830056250527" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="649.28" y="186.80" font-size="22" fill="#242424">2</text>
+<circle cx="588.7402716741076" cy="290.90169943749476" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="582.07" y="298.60" font-size="22" fill="#242424">3</text>
+<circle cx="371.2597283258925" cy="290.90169943749476" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="364.59" y="298.60" font-size="22" fill="#242424">4</text>
+<circle cx="304.0545444853966" cy="179.09830056250527" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="297.39" y="186.80" font-size="22" fill="#242424">5</text>
+</g></svg>

@@ -1,0 +1,21 @@
+---
+import { Code } from 'astro:components';
+import { loadExample } from '../lib/notes';
+interface Props { topic: string; }
+const { codes } = await loadExample(Astro.props.topic);
+---
+<section class="implementation" aria-labelledby="implementation-title">
+  <h2 id="implementation-title">예제 코드</h2>
+  <div class="code-shell" data-code-tabs>
+    <div class="language-tabs" style={`grid-template-columns: repeat(${codes.length}, minmax(0, 1fr))`} role="tablist" aria-label="예제 코드 언어">
+      {codes.map((code, index) => <button type="button" id={`tab-${code.id}`} role="tab" data-language={code.id} aria-controls={`panel-${code.id}`} aria-selected={index === 0} tabindex={index === 0 ? 0 : -1}>{code.label}</button>)}
+    </div>
+    {codes.map((code, index) => (
+      <div id={`panel-${code.id}`} role="tabpanel" aria-labelledby={`tab-${code.id}`} hidden={index !== 0} tabindex="0" data-code-panel={code.id}>
+        <div class="code-tools"><span>{code.version}</span><button type="button" data-copy>코드 복사</button></div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+        <Code code={code.source} lang={code.syntax} theme="github-dark" />
+      </div>
+    ))}
+  </div>
+</section>
