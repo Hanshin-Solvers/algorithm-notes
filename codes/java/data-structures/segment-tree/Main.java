@@ -8,6 +8,7 @@ public class Main {
     static void update(int k, int s, int e, int i, int x) {
         int m;
 
+        // 원소 하나를 담당하는 리프 노드 갱신
         if (e - s == 1) {
             t[k] = x;
             return;
@@ -17,6 +18,7 @@ public class Main {
         if (i < m) update(k * 2, s, m, i, x);
         else update(k * 2 + 1, m, e, i, x);
 
+        // 자식 구간의 합으로 부모 구간의 합 갱신
         t[k] = t[k * 2] + t[k * 2 + 1];
     }
 
@@ -24,7 +26,9 @@ public class Main {
     static int query(int k, int s, int e, int l, int r) {
         int m;
 
+        // 질의 구간과 겹치지 않으면 합에 영향을 주지 않는 0 반환
         if (r <= s || e <= l) return 0;
+        // 담당 구간이 질의 구간에 포함되면 저장된 합을 바로 반환
         if (l <= s && e <= r) return t[k];
 
         m = (s + e) / 2;

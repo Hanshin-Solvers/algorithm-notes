@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="754" height="679" viewBox="-64 -40 754 679" role="img" aria-label="같은 10정점 그래프의 BFS. 발견 순서 [1, 2, 3, 4], 큐 [2, 3, 4]. 정점 아래는 최소 거리" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-64" y="-40" width="754" height="679" fill="white"/>
+<g>
+<line x1="294.2794915591576" y1="13.396098146272088" x2="105.72050844084241" y2="111.6039018537279" stroke="#505050" stroke-width="2"/>
+<line x1="293.5865899309021" y1="12.065727020021619" x2="105.02760681258695" y2="110.27353072747744" stroke="#505050" stroke-width="2"/>
+<line x1="320.0" y1="29.0" x2="320.0" y2="96.0" stroke="#505050" stroke-width="2"/>
+<line x1="318.5" y1="29.0" x2="318.5" y2="96.0" stroke="#505050" stroke-width="2"/>
+<line x1="345.7205084408424" y1="13.396098146272088" x2="534.2794915591576" y2="111.6039018537279" stroke="#505050" stroke-width="2"/>
+<line x1="345.02760681258695" y1="14.726469272522557" x2="533.5865899309022" y2="112.93427297997837" stroke="#505050" stroke-width="2"/>
+<line x1="70.24624448705347" y1="152.31051543625028" x2="39.75375551294653" y2="237.68948456374972" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="101.20060277904321" y1="144.7872292604403" x2="208.7993972209568" y2="245.2127707395597" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="336.8559076178538" y1="148.5982706649953" x2="403.1440923821462" y2="241.4017293350047" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="575.6819701480914" y1="149.39417578592005" x2="634.3180298519086" y2="240.60582421407995" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="45.681970148091466" y1="289.39417578592" x2="104.31802985190853" y2="380.60582421408" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="212.0831749939748" y1="287.8032318258503" x2="137.9168250060252" y2="382.1967681741497" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="437.9168250060252" y1="287.8032318258503" x2="512.0831749939748" y2="382.1967681741497" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="631.1270501697769" y1="287.0184414685936" x2="548.8729498302231" y2="382.9815585314064" stroke="#bdbdbd" stroke-width="2"/>
+<circle cx="320" cy="0" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="313.33" y="7.70" font-size="22" fill="white">1</text>
+<circle cx="80" cy="125" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="73.33" y="132.70" font-size="22" fill="white">2</text>
+<circle cx="320" cy="125" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="313.33" y="132.70" font-size="22" fill="white">3</text>
+<circle cx="560" cy="125" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="553.33" y="132.70" font-size="22" fill="white">4</text>
+<circle cx="30" cy="265" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="23.33" y="272.70" font-size="22" fill="#242424">5</text>
+<circle cx="230" cy="265" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="223.33" y="272.70" font-size="22" fill="#242424">6</text>
+<circle cx="420" cy="265" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="413.33" y="272.70" font-size="22" fill="#242424">7</text>
+<circle cx="650" cy="265" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="643.33" y="272.70" font-size="22" fill="#242424">8</text>
+<circle cx="120" cy="405" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="113.33" y="412.70" font-size="22" fill="#242424">9</text>
+<circle cx="530" cy="405" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="516.67" y="412.70" font-size="22" fill="#242424">10</text>
+<rect x="306" y="34" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="314.55" y="53.30" font-size="18" fill="#666666">0</text>
+<rect x="66" y="159" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="74.55" y="178.30" font-size="18" fill="#666666">1</text>
+<rect x="306" y="159" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="314.55" y="178.30" font-size="18" fill="#666666">1</text>
+<rect x="546" y="159" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="554.55" y="178.30" font-size="18" fill="#666666">1</text>
+<rect x="16" y="299" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="22.22" y="318.30" font-size="18" fill="#666666">—</text>
+<rect x="216" y="299" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="222.22" y="318.30" font-size="18" fill="#666666">—</text>
+<rect x="406" y="299" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="412.22" y="318.30" font-size="18" fill="#666666">—</text>
+<rect x="636" y="299" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="642.22" y="318.30" font-size="18" fill="#666666">—</text>
+<rect x="106" y="439" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="112.22" y="458.30" font-size="18" fill="#666666">—</text>
+<rect x="516" y="439" width="28" height="26" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="522.22" y="458.30" font-size="18" fill="#666666">—</text>
+<text x="-53.84" y="526.30" font-size="18" fill="#242424">방문</text>
+<rect x="0" y="492" width="65" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="25.83" y="527.70" font-size="22" fill="#242424">1</text>
+<rect x="65" y="492" width="65" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="90.83" y="527.70" font-size="22" fill="#242424">2</text>
+<rect x="130" y="492" width="65" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="155.83" y="527.70" font-size="22" fill="#242424">3</text>
+<rect x="195" y="492" width="65" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="220.83" y="527.70" font-size="22" fill="#242424">4</text>
+<text x="-36.92" y="604.30" font-size="18" fill="#242424">큐</text>
+<rect x="0" y="570" width="65" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="25.83" y="605.70" font-size="22" fill="#242424">2</text>
+<rect x="65" y="570" width="65" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="90.83" y="605.70" font-size="22" fill="#242424">3</text>
+<rect x="130" y="570" width="65" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="155.83" y="605.70" font-size="22" fill="#242424">4</text>
+</g></svg>

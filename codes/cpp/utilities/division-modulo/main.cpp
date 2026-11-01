@@ -1,21 +1,15 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 int main() {
-    int a, b, q, r, up;
+    int a, m, r;
 
-    cin >> a >> b;
-    q = a / b;
-    r = a % b;
+    cin >> a >> m;
 
-    // 음수 나머지를 내림 나눗셈의 나머지로 보정
-    if (r < 0) {
-        --q;
-        r += b;
-    }
-    up = q;
-    if (r > 0) ++up;
+    // 나머지를 0 이상 m 미만으로 보정
+    r = a % m;
+    if (r < 0) r += m;
 
-    cout << q << ' ' << up << ' ' << r << '\n';
+    cout << r << '\n';
 }

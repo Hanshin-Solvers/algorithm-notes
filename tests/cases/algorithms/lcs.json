@@ -1,17 +1,32 @@
 [
   {
-    "name": "case-1",
+    "name": "multiple",
     "input": "ABCBDAB\nBDCABA\n",
-    "output": "4\n"
+    "output": "4\nBCBA\n"
   },
   {
-    "name": "case-2",
+    "name": "empty",
     "input": "A\nB\n",
-    "output": "0\n"
+    "output": "0\n\n"
   },
   {
-    "name": "case-3",
+    "name": "repeated",
     "input": "AAAA\nAA\n",
-    "output": "2\n"
+    "output": "2\nAA\n"
+  },
+  {
+    "name": "trace-table",
+    "input": "AB\nACB\n",
+    "output": "2\nAB\n"
+  },
+  {
+    "name": "tie",
+    "input": "AB\nBA\n",
+    "output": "1\nA\n"
+  },
+  {
+    "name": "equal",
+    "input": "ABC\nABC\n",
+    "output": "3\nABC\n"
   }
 ]

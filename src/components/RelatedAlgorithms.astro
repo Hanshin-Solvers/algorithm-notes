@@ -1,0 +1,18 @@
+---
+import { relatedEntries, noteUrl } from '../lib/notes';
+
+interface Props { topic: string; }
+const items = relatedEntries(Astro.props.topic);
+---
+{items.length > 0 && <nav class="related-algorithms" aria-labelledby="related-algorithms-title">
+  <h2 id="related-algorithms-title">연관 문서</h2>
+  <ul>
+    {items.map(item => <li>
+      <a href={noteUrl(item.id)} data-related-algorithm={item.id}>
+        <span class="related-number">{item.number}</span>
+        <span>{item.id === 'dp-basics' ? `DP · ${item.title}` : item.title}</span>
+        <span class="related-arrow" aria-hidden="true">→</span>
+      </a>
+    </li>)}
+  </ul>
+</nav>}

@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <string>
 
 using namespace std;
 
+vector<int> v;
+
 int main() {
     int q, i, x, j;
-    vector<int> v;
     string op;
 
     cin >> q;

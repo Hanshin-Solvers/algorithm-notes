@@ -1,11 +1,11 @@
 [
   {
+    "id": "brute-force",
+    "title": "Brute Force"
+  },
+  {
     "title": "Number Theory",
     "items": [
-      {
-        "id": "gcd-lcm",
-        "title": "GCD & LCM"
-      },
       {
         "id": "divisors",
         "title": "Divisors"
@@ -23,10 +23,14 @@
         "title": "Prime Factorization"
       },
       {
-        "id": "base-conversion",
-        "title": "Base Conversion"
+        "id": "gcd-lcm",
+        "title": "GCD & LCM"
       }
     ]
+  },
+  {
+    "id": "base-conversion",
+    "title": "Base Conversion"
   },
   {
     "id": "combinatorics",
@@ -37,16 +41,42 @@
     "title": "Sorting"
   },
   {
-    "id": "brute-force",
-    "title": "Brute Force & Recursion"
+    "id": "recursion",
+    "title": "Recursion"
   },
   {
-    "id": "dfs",
-    "title": "DFS"
+    "title": "DFS",
+    "items": [
+      {
+        "id": "dfs-graph",
+        "title": "General Graph"
+      },
+      {
+        "id": "dfs-grid",
+        "title": "Grid Graph"
+      },
+      {
+        "id": "dfs-state",
+        "title": "State Transitions"
+      }
+    ]
   },
   {
-    "id": "bfs",
-    "title": "BFS"
+    "title": "BFS",
+    "items": [
+      {
+        "id": "bfs-graph",
+        "title": "General Graph"
+      },
+      {
+        "id": "bfs-grid",
+        "title": "Grid Graph"
+      },
+      {
+        "id": "bfs-state",
+        "title": "State Transitions"
+      }
+    ]
   },
   {
     "id": "backtracking",
@@ -56,16 +86,16 @@
     "title": "Divide & Conquer",
     "items": [
       {
+        "id": "merge-sort",
+        "title": "Concept"
+      },
+      {
         "id": "power",
         "title": "Exponentiation"
       },
       {
         "id": "matrix-power",
         "title": "Matrix Multiplication & Power"
-      },
-      {
-        "id": "merge-sort",
-        "title": "Merge Sort"
       }
     ]
   },
@@ -83,8 +113,21 @@
     ]
   },
   {
-    "id": "greedy",
-    "title": "Greedy"
+    "title": "Greedy",
+    "items": [
+      {
+        "id": "greedy",
+        "title": "Interval Selection"
+      },
+      {
+        "id": "interval-merging",
+        "title": "Interval Merging"
+      },
+      {
+        "id": "exchange-argument",
+        "title": "Ordering & Exchange Argument"
+      }
+    ]
   },
   {
     "title": "Sliding Window & Two Pointers",
@@ -154,16 +197,8 @@
     "title": "Graph Algorithms",
     "items": [
       {
-        "id": "bipartite",
-        "title": "Bipartite Check"
-      },
-      {
-        "id": "topological-sort",
-        "title": "Topological Sort"
-      },
-      {
         "id": "dijkstra",
-        "title": "Dijkstra & Path Restoration"
+        "title": "Dijkstra"
       },
       {
         "id": "bellman-ford",
@@ -176,6 +211,14 @@
       {
         "id": "kruskal",
         "title": "Kruskal"
+      },
+      {
+        "id": "topological-sort",
+        "title": "Topological Sort"
+      },
+      {
+        "id": "bipartite",
+        "title": "Bipartite Check"
       }
     ]
   },
@@ -198,10 +241,6 @@
       {
         "id": "palindrome",
         "title": "Palindrome"
-      },
-      {
-        "id": "pattern-search",
-        "title": "Naive Pattern Search"
       },
       {
         "id": "kmp",

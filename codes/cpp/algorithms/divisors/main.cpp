@@ -1,10 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 
+vector<int> v;
+
 int main() {
     int n, i;
-    vector<int> v;
 
     cin >> n;
     for (i = 1; i <= n / i; ++i) {

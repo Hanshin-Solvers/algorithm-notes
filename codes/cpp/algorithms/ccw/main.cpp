@@ -1,19 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-int cross(pair<int, int> a, pair<int, int> b, pair<int, int> c) {
-    return (b.first - a.first) * (c.second - a.second)
-         - (b.second - a.second) * (c.first - a.first);
+struct point {
+    int x, y;
+};
+
+int cross(const point& a, const point& b, const point& c) {
+    return (b.x - a.x) * (c.y - a.y)
+         - (b.y - a.y) * (c.x - a.x);
 }
 
 int main() {
-    pair<int, int> a, b, c;
+    point a, b, c;
     int v;
 
-    cin >> a.first >> a.second;
-    cin >> b.first >> b.second;
-    cin >> c.first >> c.second;
+    cin >> a.x >> a.y;
+    cin >> b.x >> b.y;
+    cin >> c.x >> c.y;
 
     v = cross(a, b, c);
     if (v > 0) cout << 1 << '\n';

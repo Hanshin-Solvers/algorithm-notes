@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="335" height="267" viewBox="-42 -44 335 267" role="img" aria-label="DFS로 처음 6개 칸을 방문한 격자. 칸 안의 수는 방문 순서" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-42" y="-44" width="335" height="267" fill="white"/>
+<g>
+<text x="29.85" y="-19.05" font-size="17" fill="#666666">0</text>
+<text x="99.85" y="-19.05" font-size="17" fill="#666666">1</text>
+<text x="169.85" y="-19.05" font-size="17" fill="#666666">2</text>
+<text x="239.85" y="-19.05" font-size="17" fill="#666666">3</text>
+<text x="-30.15" y="40.95" font-size="17" fill="#666666">0</text>
+<rect x="0" y="0" width="70" height="70" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="28.33" y="42.70" font-size="22" fill="white">1</text>
+<rect x="70" y="0" width="70" height="70" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="98.33" y="42.70" font-size="22" fill="white">2</text>
+<rect x="140" y="0" width="70" height="70" rx="4" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="164" y1="24" x2="186" y2="46" stroke="#666666" stroke-width="2"/>
+<line x1="164" y1="46" x2="186" y2="24" stroke="#666666" stroke-width="2"/>
+<rect x="210" y="0" width="70" height="70" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="-30.15" y="110.95" font-size="17" fill="#666666">1</text>
+<rect x="0" y="70" width="70" height="70" rx="4" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="24" y1="94" x2="46" y2="116" stroke="#666666" stroke-width="2"/>
+<line x1="24" y1="116" x2="46" y2="94" stroke="#666666" stroke-width="2"/>
+<rect x="70" y="70" width="70" height="70" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="98.33" y="112.70" font-size="22" fill="white">3</text>
+<rect x="140" y="70" width="70" height="70" rx="4" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="164" y1="94" x2="186" y2="116" stroke="#666666" stroke-width="2"/>
+<line x1="164" y1="116" x2="186" y2="94" stroke="#666666" stroke-width="2"/>
+<rect x="210" y="70" width="70" height="70" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="-30.15" y="180.95" font-size="17" fill="#666666">2</text>
+<rect x="0" y="140" width="70" height="70" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="28.33" y="182.70" font-size="22" fill="white">6</text>
+<rect x="70" y="140" width="70" height="70" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="98.33" y="182.70" font-size="22" fill="white">4</text>
+<rect x="140" y="140" width="70" height="70" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="168.33" y="182.70" font-size="22" fill="white">5</text>
+<rect x="210" y="140" width="70" height="70" rx="4" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="234" y1="164" x2="256" y2="186" stroke="#666666" stroke-width="2"/>
+<line x1="234" y1="186" x2="256" y2="164" stroke="#666666" stroke-width="2"/>
+</g></svg>

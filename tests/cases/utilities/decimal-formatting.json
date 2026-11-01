@@ -1,0 +1,26 @@
+[
+  {
+    "name": "sample",
+    "input": "80 81 84 2\n",
+    "output": "81.67\n82 81 82\n",
+    "compare": "exact"
+  },
+  {
+    "name": "trailing-zeroes",
+    "input": "80 80 80 4\n",
+    "output": "80.0000\n80 80 80\n",
+    "compare": "exact"
+  },
+  {
+    "name": "zero-digits",
+    "input": "0 0 1 0\n",
+    "output": "0\n1 0 0\n",
+    "compare": "exact"
+  },
+  {
+    "name": "six-digits",
+    "input": "0 1 1 6\n",
+    "output": "0.666667\n1 0 1\n",
+    "compare": "exact"
+  }
+]

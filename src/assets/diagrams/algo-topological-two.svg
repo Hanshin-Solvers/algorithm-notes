@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="884" height="596" viewBox="-84 -5 884 596" role="img" aria-label="정점 9개 중 2개를 처리한 위상 정렬. 남은 진입 차수와 큐를 표시합니다." font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-84" y="-5" width="884" height="596" fill="white"/>
+<g>
+<line x1="56.47172930495269" y1="108.15738425831064" x2="193.5282706950473" y2="46.842615741689364" stroke="#bdbdbd" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="193.5282706950473,46.842615741689364 185.79643803343993,56.019693909216414 181.53343415921265,46.49062642564953" fill="#bdbdbd"/>
+<line x1="56.65520587052367" y1="131.42365965879586" x2="213.34479412947633" y2="198.57634034120414" stroke="#bdbdbd" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="213.34479412947633,198.57634034120414 201.35700056517834,199.11745535649706 205.46919219965534,189.52234154271736" fill="#bdbdbd"/>
+<line x1="55.6891145231245" y1="306.54379715455383" x2="214.31088547687548" y2="223.45620284544617" stroke="#bdbdbd" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="214.31088547687548,223.45620284544617 207.16107681070653,233.09364213382435 202.3172276042691,223.84629364880746" fill="#bdbdbd"/>
+<line x1="58.87111631832173" y1="322.73105154362503" x2="371.12888368167825" y2="352.26894845637497" stroke="#bdbdbd" stroke-width="2" stroke-dasharray="6 6"/>
+<polygon points="371.12888368167825,352.26894845637497 359.87999003041836,356.44775111056254 360.86309068699063,346.05497274108427" fill="#bdbdbd"/>
+<line x1="248.4117330361944" y1="40.81149084831249" x2="411.5882669638056" y2="74.18850915168751" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="411.5882669638056,74.18850915168751 399.95610383025615,77.13686137530209 402.0480747716234,66.90944788417328" fill="#bdbdbd"/>
+<line x1="264.3148648727185" y1="194.195337832733" x2="415.6851351272815" y2="95.80466216726701" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="415.6851351272815,95.80466216726701 409.470059417887,106.06978924521857 403.7808318418598,97.31713143594598" fill="#bdbdbd"/>
+<line x1="268.98817050736017" y1="210.82823344306743" x2="561.0118294926399" y2="219.17176655693257" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="561.0118294926399,219.17176655693257 550.0618017114853,224.08062503848828 550.3599421268777,213.64571049975063" fill="#bdbdbd"/>
+<line x1="423.64023183972193" y1="338.20299316651335" x2="566.359768160278" y2="236.79700683348665" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="566.359768160278,236.79700683348665 560.5746677974261,247.31045601973042 554.5282244466971,238.8006468594452" fill="#bdbdbd"/>
+<line x1="428.8998269891015" y1="352.59168108424154" x2="731.1001730108985" y2="327.40831891575846" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="731.1001730108985,327.40831891575846 720.7655951844183,333.50721235214706 719.8986690684158,323.10409896011674" fill="#bdbdbd"/>
+<line x1="468.9849233158513" y1="79.06500247368221" x2="721.0150766841488" y2="70.93499752631779" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="721.0150766841488,70.93499752631779 710.383615230392,76.50024930474486 710.0470427903141,66.06650366232915" fill="#bdbdbd"/>
+<line x1="611.1565789200624" y1="200.16570726244143" x2="728.8434210799376" y2="89.83429273755857" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="728.8434210799376,89.83429273755857 724.5303949627147,101.03240890556438 717.3906153205265,93.41664395389704" fill="#bdbdbd"/>
+<line x1="614.6731419234195" y1="235.23929354093556" x2="735.3268580765805" y2="309.76070645906447" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="735.3268580765805,309.76070645906447 723.3908194812466,308.52337762213415 728.8765304780832,299.64175029392254" fill="#bdbdbd"/>
+<circle cx="30" cy="120" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="23.33" y="127.70" font-size="22" fill="#242424">1</text>
+<circle cx="30" cy="320" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="23.33" y="327.70" font-size="22" fill="#242424">2</text>
+<circle cx="220" cy="35" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="213.33" y="42.70" font-size="22" fill="white">3</text>
+<circle cx="240" cy="210" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="233.33" y="217.70" font-size="22" fill="white">4</text>
+<circle cx="400" cy="355" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="393.33" y="362.70" font-size="22" fill="white">5</text>
+<circle cx="440" cy="80" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="433.33" y="87.70" font-size="22" fill="#242424">6</text>
+<circle cx="590" cy="220" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="583.33" y="227.70" font-size="22" fill="#242424">7</text>
+<circle cx="750" cy="70" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="743.33" y="77.70" font-size="22" fill="#242424">8</text>
+<circle cx="760" cy="325" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="753.33" y="332.70" font-size="22" fill="#242424">9</text>
+<text x="-72.72" y="464.30" font-size="18" fill="#242424">진입 차수</text>
+<text x="48.55" y="416.30" font-size="18" fill="#666666">1</text>
+<rect x="15" y="430" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="44.50" y="465.70" font-size="22" fill="#242424">—</text>
+<text x="126.55" y="416.30" font-size="18" fill="#666666">2</text>
+<rect x="93" y="430" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="122.50" y="465.70" font-size="22" fill="#242424">—</text>
+<text x="204.55" y="416.30" font-size="18" fill="#666666">3</text>
+<rect x="171" y="430" width="78" height="56" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="203.33" y="465.70" font-size="22" fill="white">0</text>
+<text x="282.55" y="416.30" font-size="18" fill="#666666">4</text>
+<rect x="249" y="430" width="78" height="56" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="281.33" y="465.70" font-size="22" fill="white">0</text>
+<text x="360.55" y="416.30" font-size="18" fill="#666666">5</text>
+<rect x="327" y="430" width="78" height="56" rx="4" fill="#505050" stroke="#bdbdbd" stroke-width="2"/>
+<text x="359.33" y="465.70" font-size="22" fill="white">0</text>
+<text x="438.55" y="416.30" font-size="18" fill="#666666">6</text>
+<rect x="405" y="430" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="437.33" y="465.70" font-size="22" fill="#242424">2</text>
+<text x="516.55" y="416.30" font-size="18" fill="#666666">7</text>
+<rect x="483" y="430" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="515.33" y="465.70" font-size="22" fill="#242424">2</text>
+<text x="594.55" y="416.30" font-size="18" fill="#666666">8</text>
+<rect x="561" y="430" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="593.33" y="465.70" font-size="22" fill="#242424">2</text>
+<text x="672.55" y="416.30" font-size="18" fill="#666666">9</text>
+<rect x="639" y="430" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="671.33" y="465.70" font-size="22" fill="#242424">2</text>
+<text x="-16.92" y="556.30" font-size="18" fill="#242424">큐</text>
+<rect x="15" y="522" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="47.33" y="557.70" font-size="22" fill="#242424">3</text>
+<rect x="93" y="522" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="125.33" y="557.70" font-size="22" fill="#242424">4</text>
+<rect x="171" y="522" width="78" height="56" rx="4" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="203.33" y="557.70" font-size="22" fill="#242424">5</text>
+</g></svg>

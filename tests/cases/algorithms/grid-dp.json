@@ -1,5 +1,10 @@
 [
   {
+    "name": "walls-four-by-five",
+    "input": "4 5\n11111\n11011\n10111\n11111\n",
+    "output": "5\n"
+  },
+  {
     "name": "case-1",
     "input": "2 3\n111\n111\n",
     "output": "3\n"

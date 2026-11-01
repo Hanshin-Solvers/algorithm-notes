@@ -23,10 +23,12 @@ public class Main {
             for (int x : a) {
                 cnt += x / m;
             }
+            // 필요한 조각 수를 만들 수 있으면 답을 저장하고 더 긴 길이 탐색
             if (cnt >= k) {
                 ans = m;
                 l = m + 1;
             }
+            // 조각 수가 부족하면 길이를 줄여 다시 탐색
             else r = m - 1;
         }
         System.out.println(ans);

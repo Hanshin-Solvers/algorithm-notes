@@ -37,8 +37,10 @@ public class Main {
             cur = pq.poll();
             du = cur[0];
             u = cur[1];
+            // 더 짧은 경로로 이미 갱신된 정점의 오래된 큐 항목 제외
             if (du != d[u]) continue;
             for (int[] e : g.get(u)) {
+                // u를 거쳐 더 짧아지면 거리와 경로 복원용 이전 정점 갱신
                 if (du + e[1] < d[e[0]]) {
                     d[e[0]] = du + e[1];
                     p[e[0]] = u;
@@ -49,6 +51,7 @@ public class Main {
 
         if (d[t] == INF) System.out.println(-1);
         else {
+            // 도착점에서 이전 정점을 따라가며 경로를 역순으로 수집
             for (u = t; u != 0; u = p[u]) {
                 ans.add(u);
             }

@@ -11,5 +11,10 @@
   "mst": [],
   "graph-direction": [],
   "graph-density": [],
-  "sorting-reference": []
+  "priority-queue-ordering": [
+    "cpp"
+  ],
+  "custom-hash": [
+    "cpp"
+  ]
 }

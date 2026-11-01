@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="135" viewBox="13 13 620 135" role="img" aria-label="상태 2, 4, 8, 9을 차례로 지나는 경로" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="13" y="13" width="620" height="135" fill="white"/>
+<g>
+<line x1="60" y1="75" x2="60" y2="135" stroke="#505050" stroke-width="2"/>
+<line x1="60" y1="135" x2="196" y2="135" stroke="#505050" stroke-width="2"/>
+<line x1="196" y1="135" x2="196" y2="77" stroke="#505050" stroke-width="2"/>
+<polygon points="196,77 201.21958640933477,87.80536522823212 190.78041359066523,87.80536522823212" fill="#505050"/>
+<line x1="216" y1="75" x2="216" y2="135" stroke="#505050" stroke-width="2"/>
+<line x1="216" y1="135" x2="508" y2="135" stroke="#505050" stroke-width="2"/>
+<line x1="508" y1="135" x2="508" y2="77" stroke="#505050" stroke-width="2"/>
+<polygon points="508,77 513.2195864093347,87.80536522823212 502.78041359066526,87.80536522823212" fill="#505050"/>
+<line x1="543.0" y1="50.0" x2="571.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="571.0,50.0 560.1946347717678,55.21958640933477 560.1946347717678,44.78041359066523" fill="#505050"/>
+<circle cx="50" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="43.33" y="57.70" font-size="22" fill="white">2</text>
+<circle cx="128" cy="50" r="24" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="121.33" y="57.70" font-size="22" fill="#242424">3</text>
+<circle cx="206" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="199.33" y="57.70" font-size="22" fill="white">4</text>
+<circle cx="284" cy="50" r="24" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="277.33" y="57.70" font-size="22" fill="#242424">5</text>
+<circle cx="362" cy="50" r="24" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="355.33" y="57.70" font-size="22" fill="#242424">6</text>
+<circle cx="440" cy="50" r="24" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="433.33" y="57.70" font-size="22" fill="#242424">7</text>
+<circle cx="518" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="511.33" y="57.70" font-size="22" fill="white">8</text>
+<circle cx="596" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="589.33" y="57.70" font-size="22" fill="white">9</text>
+</g></svg>

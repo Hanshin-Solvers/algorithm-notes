@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import BookLayout from '../../layouts/BookLayout.astro';
 import CodeTabs from '../../components/CodeTabs.astro';
+import RelatedAlgorithms from '../../components/RelatedAlgorithms.astro';
 import { entries, hasExample, loadExample, noteUrl } from '../../lib/notes';
 export async function getStaticPaths() {
   const notes = await getCollection('notes');
@@ -33,4 +34,5 @@ const sample = example?.sample;
     <section><h3>예제 출력</h3><pre>{sample.output}</pre></section>
   </div>}
   {example && <CodeTabs topic={item.id} />}
+  <RelatedAlgorithms topic={item.id} />
 </BookLayout>

@@ -72,3 +72,13 @@ summary{cursor:pointer;list-style:none;padding:10px 10px;font-size:14px}summary:
 .sidebar li a{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px;padding:8px 7px;font-size:13px;line-height:1.6}
 .toc-number{margin-right:0;white-space:nowrap}
 .toc-title{overflow-wrap:break-word}
+
+/* Related reading follows the example code or the end of a concept-only note. */
+.related-algorithms{margin-top:64px;padding-top:28px;border-top:var(--section-divider)}
+.related-algorithms h2{font-size:21px;line-height:1.5;margin:0 0 16px}
+.related-algorithms ul{list-style:none;padding:0;margin:0}
+.related-algorithms li+li{border-top:1px solid var(--line)}
+.related-algorithms a{display:flex;align-items:baseline;gap:14px;padding:12px 4px;text-decoration:none;font-size:15px}
+.related-algorithms a:hover{background:#fafafa;text-decoration:underline;text-underline-offset:4px}
+.related-number{color:#707070;font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.related-arrow{margin-left:auto;color:#707070}

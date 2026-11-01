@@ -4,6 +4,7 @@ t = [0] * (N * 4)
 
 # 노드 k의 담당 구간 [s, e)에서 인덱스 i의 값을 x로 갱신
 def update(k, s, e, i, x):
+    # 원소 하나를 담당하는 리프 노드 갱신
     if e - s == 1:
         t[k] = x
         return
@@ -14,13 +15,16 @@ def update(k, s, e, i, x):
     else:
         update(k * 2 + 1, m, e, i, x)
 
+    # 자식 구간의 합으로 부모 구간의 합 갱신
     t[k] = t[k * 2] + t[k * 2 + 1]
 
 
 # [l, r) 구간 합 질의
 def query(k, s, e, l, r):
+    # 질의 구간과 겹치지 않으면 합에 영향을 주지 않는 0 반환
     if r <= s or e <= l:
         return 0
+    # 담당 구간이 질의 구간에 포함되면 저장된 합을 바로 반환
     if l <= s and e <= r:
         return t[k]
 

@@ -42,6 +42,10 @@
     "title": "Priority Queue & Heap"
   },
   {
+    "id": "string",
+    "title": "String"
+  },
+  {
     "title": "Graphs",
     "items": [
       {
@@ -50,15 +54,15 @@
       },
       {
         "id": "graph-direction",
-        "title": "Undirected & Directed"
+        "title": "Undirected & Directed Graphs"
       },
       {
         "id": "graph-density",
-        "title": "Complete, Dense & Sparse"
+        "title": "Complete & Dense & Sparse Graphs"
       },
       {
         "id": "dag",
-        "title": "DAG"
+        "title": "Directed Acyclic Graph"
       },
       {
         "id": "weighted-graph",
@@ -90,5 +94,9 @@
   {
     "id": "disjoint-set",
     "title": "Disjoint Set"
+  },
+  {
+    "id": "trie",
+    "title": "Trie"
   }
 ]

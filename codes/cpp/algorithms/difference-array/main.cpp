@@ -1,10 +1,11 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
+int d[102];
+
 int main() {
     int n, q, i, l, r, x, s;
-    int d[102] = {};
 
     cin >> n >> q;
     for (i = 0; i < q; ++i) {

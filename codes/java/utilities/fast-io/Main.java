@@ -8,7 +8,7 @@ public class Main {
     static String next() throws IOException {
         String s;
 
-        // 토큰이 소진되면 다음 줄을 읽음
+        // 현재 줄의 값을 모두 읽었으면 다음 줄을 읽음
         while (st == null || !st.hasMoreTokens()) {
             s = br.readLine();
             if (s == null) return null;

@@ -1,0 +1,316 @@
+{
+  "array": [
+    "prefix-sum",
+    "binary-search",
+    "sorting"
+  ],
+  "dynamic-array": [
+    "sorting",
+    "two-pointers"
+  ],
+  "stack": [
+    "dfs-graph",
+    "backtracking"
+  ],
+  "queue": [
+    "bfs-graph",
+    "bfs-grid",
+    "topological-sort"
+  ],
+  "deque": [
+    "bfs-graph",
+    "bfs-grid"
+  ],
+  "priority-queue": [
+    "dijkstra",
+    "topological-sort"
+  ],
+  "graph": [
+    "dfs-graph",
+    "bfs-graph"
+  ],
+  "graph-direction": [
+    "bipartite",
+    "topological-sort"
+  ],
+  "graph-density": [
+    "dijkstra",
+    "floyd-warshall"
+  ],
+  "dag": [
+    "topological-sort",
+    "dp-basics"
+  ],
+  "weighted-graph": [
+    "dijkstra",
+    "bellman-ford",
+    "floyd-warshall"
+  ],
+  "tree": [
+    "tree-traversal",
+    "tree-diameter"
+  ],
+  "bst": [
+    "binary-search",
+    "tree-traversal"
+  ],
+  "mst": [
+    "kruskal"
+  ],
+  "segment-tree": [
+    "prefix-sum",
+    "difference-array"
+  ],
+  "disjoint-set": [
+    "kruskal"
+  ],
+  "gcd-lcm": [
+    "divisors",
+    "factorization"
+  ],
+  "divisors": [
+    "primality",
+    "factorization"
+  ],
+  "primality": [
+    "sieve",
+    "factorization"
+  ],
+  "sieve": [
+    "primality",
+    "factorization"
+  ],
+  "factorization": [
+    "divisors",
+    "gcd-lcm",
+    "sieve"
+  ],
+  "base-conversion": [
+    "power"
+  ],
+  "combinatorics": [
+    "backtracking",
+    "binomial"
+  ],
+  "sorting": [
+    "binary-search",
+    "two-pointers",
+    "merge-sort"
+  ],
+  "brute-force": [
+    "backtracking",
+    "recursion"
+  ],
+  "dfs-graph": [
+    "bfs-graph",
+    "backtracking",
+    "tree-traversal"
+  ],
+  "dfs-grid": [
+    "bfs-grid",
+    "dfs-state"
+  ],
+  "dfs-state": [
+    "bfs-state",
+    "backtracking"
+  ],
+  "bfs-graph": [
+    "dfs-graph",
+    "bipartite",
+    "dijkstra"
+  ],
+  "bfs-grid": [
+    "dfs-grid",
+    "bfs-state"
+  ],
+  "bfs-state": [
+    "dfs-state",
+    "dijkstra"
+  ],
+  "backtracking": [
+    "brute-force",
+    "combinatorics",
+    "dfs-state"
+  ],
+  "power": [
+    "matrix-power"
+  ],
+  "matrix-power": [
+    "power",
+    "dp-basics"
+  ],
+  "merge-sort": [
+    "sorting",
+    "binary-search"
+  ],
+  "binary-search": [
+    "parametric-search",
+    "lis"
+  ],
+  "parametric-search": [
+    "binary-search",
+    "greedy"
+  ],
+  "greedy": [
+    "kruskal",
+    "dijkstra",
+    "dp-basics",
+    "interval-merging",
+    "exchange-argument",
+    "sorting"
+  ],
+  "sliding-window": [
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "two-pointers": [
+    "sliding-window",
+    "sorting"
+  ],
+  "prefix-sum": [
+    "prefix-grid",
+    "difference-array",
+    "sliding-window"
+  ],
+  "prefix-grid": [
+    "prefix-sum",
+    "grid-dp"
+  ],
+  "difference-array": [
+    "prefix-sum",
+    "prefix-grid"
+  ],
+  "dp-basics": [
+    "grid-dp",
+    "knapsack",
+    "lis",
+    "brute-force"
+  ],
+  "grid-dp": [
+    "dp-basics",
+    "lcs"
+  ],
+  "knapsack": [
+    "dp-basics",
+    "backtracking"
+  ],
+  "lis": [
+    "binary-search",
+    "dp-basics",
+    "lcs"
+  ],
+  "lcs": [
+    "dp-basics",
+    "grid-dp",
+    "lis"
+  ],
+  "binomial": [
+    "combinatorics",
+    "dp-basics",
+    "backtracking"
+  ],
+  "bipartite": [
+    "bfs-graph",
+    "dfs-graph"
+  ],
+  "topological-sort": [
+    "bfs-graph",
+    "dp-basics"
+  ],
+  "dijkstra": [
+    "bfs-graph",
+    "bellman-ford",
+    "floyd-warshall"
+  ],
+  "bellman-ford": [
+    "dijkstra",
+    "floyd-warshall"
+  ],
+  "floyd-warshall": [
+    "dijkstra",
+    "bellman-ford"
+  ],
+  "kruskal": [
+    "greedy",
+    "dijkstra"
+  ],
+  "tree-traversal": [
+    "dfs-graph",
+    "tree-diameter"
+  ],
+  "tree-diameter": [
+    "tree-traversal",
+    "bfs-graph"
+  ],
+  "palindrome": [
+    "two-pointers",
+    "kmp"
+  ],
+  "ccw": [
+    "segment-intersection",
+    "convex-hull"
+  ],
+  "segment-intersection": [
+    "ccw",
+    "convex-hull"
+  ],
+  "polygon-area": [
+    "ccw",
+    "convex-hull"
+  ],
+  "convex-hull": [
+    "ccw",
+    "polygon-area",
+    "sorting"
+  ],
+  "division-modulo": [
+    "gcd-lcm",
+    "base-conversion",
+    "power"
+  ],
+  "container-operations": [
+    "sorting",
+    "binary-search"
+  ],
+  "bit-operations": [
+    "base-conversion",
+    "power",
+    "backtracking"
+  ],
+  "string": [
+    "palindrome",
+    "kmp",
+    "trie"
+  ],
+  "trie": [
+    "tree",
+    "map"
+  ],
+  "interval-merging": [
+    "sorting"
+  ],
+  "exchange-argument": [
+    "sorting",
+    "kruskal"
+  ],
+  "priority-queue-ordering": [
+    "priority-queue",
+    "sorting",
+    "dijkstra"
+  ],
+  "custom-hash": [
+    "set",
+    "map",
+    "container-operations"
+  ],
+  "recursion": [
+    "dfs-graph",
+    "merge-sort",
+    "dp-basics"
+  ],
+  "decimal-formatting": [
+    "numeric-types",
+    "basic-io",
+    "polygon-area"
+  ]
+}

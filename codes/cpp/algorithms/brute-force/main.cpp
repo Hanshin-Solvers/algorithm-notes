@@ -1,23 +1,18 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-int n, target, cnt;
-
-void search(int d, int s) {
-    int x;
-
-    if (d == 2) {
-        if (s == target) ++cnt;
-        return;
-    }
-    for (x = 1; x <= n; ++x) {
-        search(d + 1, s + x);
-    }
-}
-
 int main() {
-    cin >> n >> target;
-    search(0, 0);
+    int n, s, i, j, cnt;
+
+    cin >> n >> s;
+    cnt = 0;
+
+    for (i = 1; i <= n; ++i) {
+        for (j = 1; j <= n; ++j) {
+            if (i + j == s) ++cnt;
+        }
+    }
+
     cout << cnt << '\n';
 }

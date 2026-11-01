@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="74" viewBox="13 13 620 74" role="img" aria-label="상태 2, 3, 4, 5, 6, 7, 8, 9을 차례로 지나는 경로" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="13" y="13" width="620" height="74" fill="white"/>
+<g>
+<line x1="75.0" y1="50.0" x2="103.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="103.0,50.0 92.19463477176788,55.21958640933477 92.19463477176788,44.78041359066523" fill="#505050"/>
+<line x1="153.0" y1="50.0" x2="181.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="181.0,50.0 170.19463477176788,55.21958640933477 170.19463477176788,44.78041359066523" fill="#505050"/>
+<line x1="231.0" y1="50.0" x2="259.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="259.0,50.0 248.19463477176788,55.21958640933477 248.19463477176788,44.78041359066523" fill="#505050"/>
+<line x1="309.0" y1="50.0" x2="337.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="337.0,50.0 326.1946347717679,55.21958640933477 326.1946347717679,44.78041359066523" fill="#505050"/>
+<line x1="387.0" y1="50.0" x2="415.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="415.0,50.0 404.1946347717679,55.21958640933477 404.1946347717679,44.78041359066523" fill="#505050"/>
+<line x1="465.0" y1="50.0" x2="493.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="493.0,50.0 482.1946347717679,55.21958640933477 482.1946347717679,44.78041359066523" fill="#505050"/>
+<line x1="543.0" y1="50.0" x2="571.0" y2="50.0" stroke="#505050" stroke-width="2"/>
+<polygon points="571.0,50.0 560.1946347717678,55.21958640933477 560.1946347717678,44.78041359066523" fill="#505050"/>
+<circle cx="50" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="43.33" y="57.70" font-size="22" fill="white">2</text>
+<circle cx="128" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="121.33" y="57.70" font-size="22" fill="white">3</text>
+<circle cx="206" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="199.33" y="57.70" font-size="22" fill="white">4</text>
+<circle cx="284" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="277.33" y="57.70" font-size="22" fill="white">5</text>
+<circle cx="362" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="355.33" y="57.70" font-size="22" fill="white">6</text>
+<circle cx="440" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="433.33" y="57.70" font-size="22" fill="white">7</text>
+<circle cx="518" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="511.33" y="57.70" font-size="22" fill="white">8</text>
+<circle cx="596" cy="50" r="24" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="589.33" y="57.70" font-size="22" fill="white">9</text>
+</g></svg>

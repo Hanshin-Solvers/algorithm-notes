@@ -2,6 +2,7 @@ import groups from '../data/navigation.json';
 import algorithmGroups from '../data/navigation-algorithms.json';
 import utilityGroups from '../data/navigation-utilities.json';
 import languageConfig from '../data/example-languages.json';
+import relatedConfig from '../data/related-algorithms.json';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
@@ -27,6 +28,18 @@ export const categories = [
   { id: 'utilities', title: '3 Utilities', groups: utilityNavigation },
 ];
 export const entries = categories.flatMap(category => category.groups.flatMap(group => group.items));
+const relatedIds = new Map(entries.map(entry => [entry.id, new Set<string>()]));
+for (const [source, targets] of Object.entries(relatedConfig)) {
+  const sourceIds = relatedIds.get(source);
+  if (!sourceIds) throw new Error(`Unknown related topic: ${source}`);
+  for (const target of targets) {
+    const targetIds = relatedIds.get(target);
+    if (!targetIds || source === target) throw new Error(`Invalid related topics: ${source}, ${target}`);
+    sourceIds.add(target);
+    targetIds.add(source);
+  }
+}
+export const relatedEntries = (topic: string) => entries.filter(entry => relatedIds.get(topic)?.has(entry.id));
 export const url = (path = '') => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path}`;
 export const noteUrl = (id: string) => {
   const entry = entries.find(entry => entry.id === id);

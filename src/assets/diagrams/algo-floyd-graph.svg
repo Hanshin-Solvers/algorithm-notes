@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="733" height="418" viewBox="-20 -78 733 418" role="img" aria-label="6개 정점과 10개 방향 간선의 가중치 그래프" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-20" y="-78" width="733" height="418" fill="white"/>
+<g>
+<line x1="41.824724146499456" y1="150.90336637181298" x2="158.17527585350055" y2="49.09663362818702" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="158.17527585350055,49.09663362818702 153.48053150665183,60.14015550835423 146.60628810322217,52.28387733300604" fill="#bdbdbd"/>
+<rect x="82.0" y="85.0" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="94.55" y="106.30" font-size="18" fill="#242424">3</text>
+<line x1="45.17905112160932" y1="184.3880292123482" x2="204.82094887839068" y2="275.61197078765184" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="204.82094887839068,275.61197078765184 192.84962456103895,274.78287845938985 198.02890468061716,265.71913825012797" fill="#bdbdbd"/>
+<rect x="107.0" y="215.0" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="119.55" y="236.30" font-size="18" fill="#242424">8</text>
+<line x1="185.4765744158536" y1="58.47818696243877" x2="224.5234255841464" y2="261.52181303756123" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="224.5234255841464,261.52181303756123 217.35719301881778,251.89658001079124 227.60852802789637,249.9251694321223" fill="#bdbdbd"/>
+<rect x="187.0" y="145.0" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="199.55" y="166.30" font-size="18" fill="#242424">2</text>
+<line x1="207.25400928116468" y1="39.910548829514426" x2="372.74599071883534" y2="100.08945117048557" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="372.74599071883534,100.08945117048557 360.8074220913804,101.3021255404414 364.37493698652395,91.49145957879652" fill="#bdbdbd"/>
+<rect x="272.0" y="55.0" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="284.55" y="76.30" font-size="18" fill="#242424">5</text>
+<line x1="249.91208245594777" y1="268.91661857605527" x2="380.08791754405223" y2="131.0833814239447" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="380.08791754405223,131.0833814239447 376.46340746653686,142.52291492396074 368.8739915256235,135.3551332019871" fill="#bdbdbd"/>
+<rect x="297.0" y="185.0" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="309.55" y="206.30" font-size="18" fill="#242424">1</text>
+<line x1="258.98013017923626" y1="291.07333815478654" x2="471.01986982076374" y2="298.92666184521346" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="471.01986982076374,298.92666184521346 460.02872250373946,303.7427474606765 460.415093624108,293.31072721072525" fill="#bdbdbd"/>
+<rect x="347.0" y="280.0" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="359.55" y="301.30" font-size="18" fill="#242424">4</text>
+<line x1="413.50664655214604" y1="135.6626284490775" x2="486.49335344785396" y2="274.3373715509225" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="486.49335344785396,274.3373715509225 476.84188601043354,267.20651071197653 486.07970026426887,262.34450320995796" fill="#bdbdbd"/>
+<rect x="432.0" y="190.0" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="444.55" y="211.30" font-size="18" fill="#242424">2</text>
+<line x1="428.3721413904493" y1="116.00179914028735" x2="631.6278586095507" y2="158.99820085971265" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="631.6278586095507,158.99820085971265 619.9761944973077,161.868518510334 622.1366709955284,151.65535688238134" fill="#bdbdbd"/>
+<rect x="512.0" y="122.5" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="524.55" y="143.80" font-size="18" fill="#242424">7</text>
+<line x1="522.1644530217288" y1="281.2987427629163" x2="637.8355469782712" y2="183.7012572370837" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="637.8355469782712,183.7012572370837 632.9430579482154,194.65860870040657 626.2111387680667,186.68003782023038" fill="#bdbdbd"/>
+<rect x="562.0" y="217.5" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="574.55" y="238.80" font-size="18" fill="#242424">1</text>
+<line x1="680" y1="145" x2="700" y2="-50" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="700" y1="-50" x2="180" y2="-50" stroke="#bdbdbd" stroke-width="2"/>
+<line x1="180" y1="-50" x2="180" y2="1" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="180,1 174.78041359066523,-9.805365228232123 185.21958640933477,-9.805365228232123" fill="#bdbdbd"/>
+<rect x="422.0" y="-65" width="36" height="30" rx="4" fill="white" stroke="white" stroke-width="2"/>
+<text x="434.55" y="-43.70" font-size="18" fill="#242424">6</text>
+<circle cx="20" cy="170" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="13.33" y="177.70" font-size="22" fill="#242424">1</text>
+<circle cx="180" cy="30" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="173.33" y="37.70" font-size="22" fill="#242424">2</text>
+<circle cx="230" cy="290" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="223.33" y="297.70" font-size="22" fill="#242424">3</text>
+<circle cx="400" cy="110" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="393.33" y="117.70" font-size="22" fill="#242424">4</text>
+<circle cx="500" cy="300" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="493.33" y="307.70" font-size="22" fill="#242424">5</text>
+<circle cx="660" cy="165" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="653.33" y="172.70" font-size="22" fill="#242424">6</text>
+</g></svg>

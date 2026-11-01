@@ -1,10 +1,11 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
+int dp[31][31];
+
 int main() {
     int n, r, i, j;
-    int dp[31][31] = {};
 
     cin >> n >> r;
     for (i = 0; i <= n; ++i) {

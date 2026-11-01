@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="608" height="561" viewBox="-45 -521 608 561" role="img" aria-label="비스듬한 두 선분 AB와 CD의 교차, 연장선 교차, 겹침 비교" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-45" y="-521" width="608" height="561" fill="white"/>
+<g>
+<line x1="0" y1="-462" x2="0" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-4.85" y="27.60" font-size="16" fill="#666666">0</text>
+<line x1="42" y1="-462" x2="42" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="37.15" y="27.60" font-size="16" fill="#666666">1</text>
+<line x1="84" y1="-462" x2="84" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="79.15" y="27.60" font-size="16" fill="#666666">2</text>
+<line x1="126" y1="-462" x2="126" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="121.15" y="27.60" font-size="16" fill="#666666">3</text>
+<line x1="168" y1="-462" x2="168" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="163.15" y="27.60" font-size="16" fill="#666666">4</text>
+<line x1="210" y1="-462" x2="210" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="205.15" y="27.60" font-size="16" fill="#666666">5</text>
+<line x1="252" y1="-462" x2="252" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="247.15" y="27.60" font-size="16" fill="#666666">6</text>
+<line x1="294" y1="-462" x2="294" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="289.15" y="27.60" font-size="16" fill="#666666">7</text>
+<line x1="336" y1="-462" x2="336" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="331.15" y="27.60" font-size="16" fill="#666666">8</text>
+<line x1="378" y1="-462" x2="378" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="373.15" y="27.60" font-size="16" fill="#666666">9</text>
+<line x1="420" y1="-462" x2="420" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="410.30" y="27.60" font-size="16" fill="#666666">10</text>
+<line x1="462" y1="-462" x2="462" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="452.30" y="27.60" font-size="16" fill="#666666">11</text>
+<line x1="504" y1="-462" x2="504" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="494.30" y="27.60" font-size="16" fill="#666666">12</text>
+<line x1="0" y1="0" x2="504" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="5.60" font-size="16" fill="#666666">0</text>
+<line x1="0" y1="-42" x2="504" y2="-42" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-36.40" font-size="16" fill="#666666">1</text>
+<line x1="0" y1="-84" x2="504" y2="-84" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-78.40" font-size="16" fill="#666666">2</text>
+<line x1="0" y1="-126" x2="504" y2="-126" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-120.40" font-size="16" fill="#666666">3</text>
+<line x1="0" y1="-168" x2="504" y2="-168" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-162.40" font-size="16" fill="#666666">4</text>
+<line x1="0" y1="-210" x2="504" y2="-210" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-204.40" font-size="16" fill="#666666">5</text>
+<line x1="0" y1="-252" x2="504" y2="-252" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-246.40" font-size="16" fill="#666666">6</text>
+<line x1="0" y1="-294" x2="504" y2="-294" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-288.40" font-size="16" fill="#666666">7</text>
+<line x1="0" y1="-336" x2="504" y2="-336" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-330.40" font-size="16" fill="#666666">8</text>
+<line x1="0" y1="-378" x2="504" y2="-378" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-372.40" font-size="16" fill="#666666">9</text>
+<line x1="0" y1="-420" x2="504" y2="-420" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-34.70" y="-414.40" font-size="16" fill="#666666">10</text>
+<line x1="0" y1="-462" x2="504" y2="-462" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-34.70" y="-456.40" font-size="16" fill="#666666">11</text>
+<line x1="-8" y1="0" x2="532" y2="0" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="532,0 521.1946347717678,5.219586409334763 521.1946347717678,-5.219586409334763" fill="#bdbdbd"/>
+<line x1="0" y1="8" x2="0" y2="-490" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="0,-490 5.219586409334763,-479.1946347717679 -5.219586409334763,-479.1946347717679" fill="#bdbdbd"/>
+<text x="542.66" y="5.95" font-size="17" fill="#666666">x</text>
+<text x="-3.94" y="-499.05" font-size="17" fill="#666666">y</text>
+<line x1="42" y1="-84" x2="210" y2="-168" stroke="#505050" stroke-width="2"/>
+<line x1="294" y1="-84" x2="252" y2="-336" stroke="#505050" stroke-width="2"/>
+<line x1="210" y1="-168" x2="336" y2="-231.0" stroke="#666666" stroke-width="2" stroke-dasharray="6 6"/>
+<circle cx="42" cy="-84" r="5" fill="#242424"/>
+<text x="48.46" y="-94.70" font-size="18" fill="#242424">A</text>
+<circle cx="210" cy="-168" r="5" fill="#242424"/>
+<text x="217.55" y="-178.70" font-size="18" fill="#242424">B</text>
+<circle cx="294" cy="-84" r="5" fill="#242424"/>
+<text x="300.95" y="-94.70" font-size="18" fill="#242424">C</text>
+<circle cx="252" cy="-336" r="5" fill="#242424"/>
+<text x="258.46" y="-346.70" font-size="18" fill="#242424">D</text>
+</g></svg>

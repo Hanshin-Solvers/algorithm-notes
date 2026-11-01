@@ -1,6 +1,6 @@
 #include <iostream>
-#include <stack>
 #include <string>
+#include <stack>
 
 using namespace std;
 

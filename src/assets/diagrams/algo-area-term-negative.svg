@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="315" viewBox="-41 -275 460 315" role="img" aria-label="외적의 절댓값 12는 평행사변형 넓이이며 삼각형 넓이 6의 두 배" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-41" y="-275" width="460" height="315" fill="white"/>
+<g>
+<line x1="0" y1="-216" x2="0" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-4.85" y="27.60" font-size="16" fill="#666666">0</text>
+<line x1="72" y1="-216" x2="72" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="67.15" y="27.60" font-size="16" fill="#666666">1</text>
+<line x1="144" y1="-216" x2="144" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="139.15" y="27.60" font-size="16" fill="#666666">2</text>
+<line x1="216" y1="-216" x2="216" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="211.15" y="27.60" font-size="16" fill="#666666">3</text>
+<line x1="288" y1="-216" x2="288" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="283.15" y="27.60" font-size="16" fill="#666666">4</text>
+<line x1="360" y1="-216" x2="360" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="355.15" y="27.60" font-size="16" fill="#666666">5</text>
+<line x1="0" y1="0" x2="360" y2="0" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="5.60" font-size="16" fill="#666666">0</text>
+<line x1="0" y1="-72" x2="360" y2="-72" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-66.40" font-size="16" fill="#666666">1</text>
+<line x1="0" y1="-144" x2="360" y2="-144" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-138.40" font-size="16" fill="#666666">2</text>
+<line x1="0" y1="-216" x2="360" y2="-216" stroke="#e8e8e8" stroke-width="2"/>
+<text x="-29.85" y="-210.40" font-size="16" fill="#666666">3</text>
+<line x1="-8" y1="0" x2="388" y2="0" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="388,0 377.1946347717679,5.219586409334763 377.1946347717679,-5.219586409334763" fill="#bdbdbd"/>
+<line x1="0" y1="8" x2="0" y2="-244" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="0,-244 5.219586409334763,-233.19463477176788 -5.219586409334763,-233.19463477176788" fill="#bdbdbd"/>
+<text x="398.67" y="5.95" font-size="17" fill="#666666">x</text>
+<text x="-3.94" y="-253.05" font-size="17" fill="#666666">y</text>
+<polygon points="0,0 288,0 360,-216 72,-216" fill="white" stroke="#505050" stroke-width="2"/>
+<polygon points="0,0 288,0 72,-216" fill="#dddddd" stroke="#505050" stroke-width="2"/>
+<line x1="72" y1="-216" x2="72" y2="0" stroke="#666666" stroke-width="2" stroke-dasharray="6 6"/>
+<line x1="0" y1="0" x2="72" y2="-216" stroke="#505050" stroke-width="2"/>
+<polygon points="72,-216 73.53477794214747,-204.09855232888464 63.631309043612795,-207.39970862839618" fill="#505050"/>
+<line x1="72" y1="-216" x2="288" y2="0" stroke="#505050" stroke-width="2"/>
+<polygon points="288,0 276.66864802889,-3.9497420810505073 284.0502579189495,-11.331351971110013" fill="#505050"/>
+<line x1="288" y1="0" x2="0" y2="0" stroke="#505050" stroke-width="2"/>
+<polygon points="0,0 10.805365228232121,-5.219586409334766 10.805365228232123,5.219586409334763" fill="#505050"/>
+<text x="115.13" y="-63.60" font-size="24" fill="#242424">6</text>
+<text x="230.33" y="-135.60" font-size="24" fill="#666666">6</text>
+<circle cx="0" cy="0" r="5" fill="#242424"/>
+<text x="-23.08" y="-11.70" font-size="18" fill="#242424">O</text>
+<circle cx="288" cy="0" r="5" fill="#242424"/>
+<text x="296.46" y="-10.70" font-size="18" fill="#242424">A</text>
+<circle cx="72" cy="-216" r="5" fill="#242424"/>
+<text x="51.55" y="-227.70" font-size="18" fill="#242424">B</text>
+<circle cx="360" cy="-216" r="5" fill="#242424"/>
+<text x="367.92" y="-226.70" font-size="18" fill="#242424">Q</text>
+</g></svg>

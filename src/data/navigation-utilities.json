@@ -1,5 +1,9 @@
 [
   {
+    "id": "complexity",
+    "title": "Time & Space Complexity"
+  },
+  {
     "id": "submission-template",
     "title": "Submission Template"
   },
@@ -25,43 +29,31 @@
     ]
   },
   {
-    "id": "complexity",
-    "title": "Time & Space Complexity"
-  },
-  {
     "id": "numeric-types",
     "title": "Numeric Types & Overflow"
   },
   {
     "id": "division-modulo",
-    "title": "Division & Modulo"
+    "title": "Modulo"
   },
   {
-    "id": "type-conversion",
-    "title": "Character & Number Conversion"
-  },
-  {
-    "id": "string-operations",
-    "title": "String Operations"
-  },
-  {
-    "id": "container-operations",
-    "title": "Container Operations"
-  },
-  {
-    "id": "sorting-reference",
-    "title": "Sorting Reference"
+    "id": "decimal-formatting",
+    "title": "Decimal Formatting & Rounding"
   },
   {
     "id": "bit-operations",
     "title": "Bit Operations"
   },
   {
-    "id": "grid-directions",
-    "title": "Grid Directions"
+    "id": "container-operations",
+    "title": "Container Operations"
   },
   {
-    "id": "debugging",
-    "title": "Debugging & Timing"
+    "id": "priority-queue-ordering",
+    "title": "Priority Queue Ordering"
+  },
+  {
+    "id": "custom-hash",
+    "title": "Custom Hash"
   }
 ]

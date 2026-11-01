@@ -1,6 +1,6 @@
 #include <iostream>
-#include <deque>
 #include <string>
+#include <deque>
 
 using namespace std;
 

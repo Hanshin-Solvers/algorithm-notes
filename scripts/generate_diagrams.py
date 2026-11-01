@@ -226,19 +226,30 @@ def priorities():
         d.save()
 
 
+GRAPH_POINTS = {1:(50,160), 2:(190,40), 3:(215,285), 4:(350,150),
+                5:(475,45), 6:(500,290), 7:(660,150), 8:(760,300)}
+GRAPH_EDGES = [(1,2),(1,3),(2,3),(2,4),(3,4),(3,6),
+               (4,5),(4,6),(5,7),(6,7),(6,8),(7,8)]
+GRAPH_WEIGHTS = [4,7,2,5,1,6,3,8,4,2,5,3]
+
+
 def graphs():
-    d = Diagram('graph', 250, '간선 1-2, 1-3, 3-4로 연결된 무방향 그래프')
-    points = {1:(0,0),2:(240,0),3:(0,100),4:(240,100)}
-    for i,j in [(1,2),(1,3),(3,4)]:
+    d = Diagram('graph', 400, '정점 8개와 간선 12개로 이루어지고 여러 사이클과 갈림길이 있는 무방향 그래프')
+    points = GRAPH_POINTS
+    for i,j in GRAPH_EDGES:
         d.edge(points[i],points[j])
     for value, point in points.items():
         d.node(*point,value)
     d.save()
 
-    d = Diagram('adjacency-list', 300, '1의 이웃은 2, 3이고 2의 이웃은 1, 3의 이웃은 1, 4, 4의 이웃은 3인 인접 리스트')
-    for i, values in enumerate([[2,3],[1],[1,4],[3]]):
+    neighbors = {v: [] for v in points}
+    for u, v in GRAPH_EDGES:
+        neighbors[u].append(v)
+        neighbors[v].append(u)
+    d = Diagram('adjacency-list', 500, '앞의 8개 정점 그래프를 저장한 인접 리스트. 각 무방향 간선을 양 끝 정점의 목록에 기록합니다.')
+    for i, values in enumerate(neighbors.values()):
         d.text(-40, i*60+23, f'g[{i+1}]', 20)
-        for j, value in enumerate(values):
+        for j, value in enumerate(sorted(values)):
             d.box(j*65, i*60, value, w=65, h=46)
     d.save()
 
@@ -286,30 +297,35 @@ def graph_types():
 
         d.save()
 
-    square={'A':(330,130),'B':(630,130),'C':(630,280),'D':(330,280)}
-    chain=[('A','B'),('B','C'),('C','D')]
     network('undirected-graph',
-            '화살표 없는 선은 양방향 연결을 나타냅니다.',square,chain)
+            '8개 정점과 12개 간선의 무방향 그래프. 정점 4에서 2, 3, 5, 6으로 이동할 수 있습니다.',
+            GRAPH_POINTS,GRAPH_EDGES)
+    directed=[(1,2),(3,1),(2,3),(2,4),(4,3),(3,6),
+              (4,5),(6,4),(5,7),(7,6),(6,8),(7,8)]
     network('directed-graph',
-            'A에서 B로, B에서 C로, C에서 D로 향하는 화살표.',square,chain,True)
-    complete=chain+[('D','A'),('A','C'),('B','D')]
+            '같은 8개 정점과 연결에 방향을 부여한 그래프. 1, 2, 4, 3을 거쳐 1로 돌아오는 방향 사이클이 있습니다.',
+            GRAPH_POINTS,directed,True)
+    density_points={1:(80,135),2:(215,30),3:(440,55),4:(620,175),
+                    5:(535,345),6:(280,395),7:(55,300)}
+    complete=[(u,v) for u in density_points for v in density_points if u<v]
     network('complete-graph',
-            '네 정점의 모든 쌍을 여섯 간선으로 연결한 구조.',square,complete)
-    pentagon={str(i+1):(480+185*math.cos(-math.pi/2+i*2*math.pi/5),
-                         210+100*math.sin(-math.pi/2+i*2*math.pi/5)) for i in range(5)}
-    sparse=[('1','2'),('2','3'),('3','4'),('4','5')]
-    dense=sparse+[('5','1'),('1','3'),('1','4'),('2','4'),('2','5')]
+            '정점 7개의 모든 쌍을 21개 간선으로 연결한 완전 그래프 K7.',density_points,complete)
+    sparse=[(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(2,7)]
+    dense=sparse+[(7,1),(1,3),(1,4),(2,4),(2,6),(3,5),(4,6)]
     network('sparse-graph',
-            '다섯 정점 사이의 일부 쌍만 연결된 구조.',pentagon,sparse)
+            '같은 7개 정점을 7개 간선으로 연결한 희소 그래프. 정점 2에 세 간선이 연결됩니다.',density_points,sparse)
     network('dense-graph',
-            '다섯 정점 사이의 많은 쌍이 연결된 구조.',pentagon,dense)
-    diamond={'A':(270,205),'B':(475,130),'C':(475,280),'D':(690,205)}
+            '같은 7개 정점을 14개 간선으로 연결한 밀집 그래프.',density_points,dense)
+    dag_points={1:(30,120),2:(30,320),3:(220,35),4:(240,210),5:(400,355),
+                6:(440,80),7:(590,220),8:(750,70),9:(760,325)}
+    dag_edges=[(1,3),(1,4),(2,4),(2,5),(3,6),(4,6),(4,7),
+               (5,7),(5,9),(6,8),(7,8),(7,9)]
     network('dag',
-            'A에서 B와 C로, B와 C에서 D로 향하며 방향 사이클이 없는 구조.',
-            diamond,[('A','B'),('A','C'),('B','D'),('C','D')],True)
+            '9개 정점과 12개 간선의 DAG. 1과 2에서 분기한 경로들이 4, 6, 7에서 합류하고 8과 9로 이어집니다.',
+            dag_points,dag_edges,True)
     network('weighted-graph',
-            '간선마다 가중치 1,2,3,5,6을 표시한 그래프.',
-            square,chain+[('D','A'),('A','C')],weights=[1,2,3,5,6])
+            '8개 정점과 12개 간선의 가중치 그래프. 여러 경로의 비용을 간선 위의 수로 계산할 수 있습니다.',
+            GRAPH_POINTS,GRAPH_EDGES,weights=GRAPH_WEIGHTS)
     mst_points = {'A':(70,170),'B':(210,40),'C':(245,285),
                   'D':(390,120),'E':(480,300),'F':(640,205)}
     mst_edges = [('A','B'),('A','C'),('B','C'),('B','D'),('C','D'),
@@ -333,6 +349,29 @@ def graph_types():
     d.save()
 
 
+def strings_and_tries():
+    for d, after in states('string', ['문자열 apple의 문자와 인덱스', '첫 문자를 A로 바꾼 문자열 Apple']):
+        indexed_row(d, list('Apple' if after else 'apple'), (0,) if after else ())
+        d.save()
+
+    points = {0: (240, 0), 1: (120, 100), 2: (120, 200),
+              3: (40, 300), 4: (200, 300), 5: (400, 100),
+              6: (400, 200), 7: (400, 300)}
+    edges = [(0, 1, 'c'), (1, 2, 'a'), (2, 3, 'r'), (2, 4, 't'),
+             (0, 5, 'd'), (5, 6, 'o'), (6, 7, 'g')]
+    for d, after in states('trie', ['car, cat, dog를 저장한 트라이. 진한 노드는 단어의 끝입니다.',
+                                   'ca의 끝 표시를 추가한 트라이. 기존 경로를 공유합니다.']):
+        for u, v, c in edges:
+            a, b = points[u], points[v]
+            d.edge(a, b)
+            x, y = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2
+            d.rect(x - 15, y - 16, 30, 32, stroke='white')
+            d.text(x, y, c)
+        for u, (x, y) in points.items():
+            d.node(x, y, u, active=u in (3, 4, 7) or (after and u == 2))
+        d.save()
+
+
 if __name__ == '__main__':
     arrays()
     linear()
@@ -340,5 +379,6 @@ if __name__ == '__main__':
     priorities()
     graphs()
     graph_types()
+    strings_and_tries()
     print(f'Generated {len(list(OUT.glob("*.svg")))} diagrams in {OUT}')
 

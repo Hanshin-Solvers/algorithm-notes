@@ -1,10 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 
+vector<int> v;
+
 int main() {
     int n, target, i, l, r, s, ans;
-    vector<int> v;
 
     cin >> n >> target;
     v.resize(n);

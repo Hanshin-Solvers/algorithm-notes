@@ -1,13 +1,19 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
+
+struct edge {
+    int a, b, w;
+};
+
+vector<edge> edges;
+vector<int> d;
 
 int main() {
     const int INF = 1000000;
     int n, m, i, j, a, b, w;
     bool changed, cycle;
-    vector<array<int, 3>> edges;
-    vector<int> d;
 
     cin >> n >> m;
     for (i = 0; i < m; ++i) {
@@ -21,16 +27,19 @@ int main() {
     for (i = 1; i <= n; ++i) {
         changed = false;
         for (const auto& e : edges) {
-            a = e[0];
-            b = e[1];
-            w = e[2];
+            a = e.a;
+            b = e.b;
+            w = e.w;
+            // 시작점에서 도달한 정점의 간선만 사용
             if (d[a] == INF) continue;
             if (d[a] + w < d[b]) {
                 d[b] = d[a] + w;
                 changed = true;
+                // n번째 반복에도 갱신되면 시작점에서 도달 가능한 음수 사이클 존재
                 if (i == n) cycle = true;
             }
         }
+        // 거리 변화가 없으면 이후 반복에서도 갱신되지 않으므로 종료
         if (!changed) break;
     }
 

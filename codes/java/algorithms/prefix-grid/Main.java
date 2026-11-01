@@ -14,6 +14,7 @@ public class Main {
         for (i = 1; i <= n; ++i) {
             for (j = 1; j <= m; ++j) {
                 x = in.nextInt();
+                // 위쪽 합과 왼쪽 합에서 두 번 포함된 왼쪽 위 영역을 한 번 뺌
                 p[i][j] = p[i - 1][j] + p[i][j - 1] - p[i - 1][j - 1] + x;
             }
         }
@@ -22,6 +23,7 @@ public class Main {
             b = in.nextInt();
             c = in.nextInt();
             d = in.nextInt();
+            // 큰 직사각형에서 위·왼쪽 영역을 빼고 두 번 빠진 공통 영역을 더함
             System.out.println(p[c][d] - p[a - 1][d] - p[c][b - 1] + p[a - 1][b - 1]);
         }
     }

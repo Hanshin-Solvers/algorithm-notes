@@ -1,17 +1,32 @@
 [
   {
-    "name": "case-1",
+    "name": "multiple",
     "input": "5\n3 1 2 5 4\n",
-    "output": "3\n"
+    "output": "3\n1 2 4\n"
   },
   {
-    "name": "case-2",
+    "name": "equal",
     "input": "4\n2 2 2 2\n",
-    "output": "1\n"
+    "output": "1\n2\n"
   },
   {
-    "name": "case-3",
+    "name": "decreasing",
     "input": "4\n4 3 2 1\n",
-    "output": "1\n"
+    "output": "1\n1\n"
+  },
+  {
+    "name": "tails-not-subsequence",
+    "input": "4\n2 3 4 1\n",
+    "output": "3\n2 3 4\n"
+  },
+  {
+    "name": "single",
+    "input": "1\n7\n",
+    "output": "1\n7\n"
+  },
+  {
+    "name": "increasing",
+    "input": "5\n1 2 3 4 5\n",
+    "output": "5\n1 2 3 4 5\n"
   }
 ]

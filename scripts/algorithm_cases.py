@@ -49,15 +49,45 @@ def algorithm_cases(topic):
                 out = row(out)
             add(f'{n}\n', out)
     elif topic == 'base-conversion':
-        for n, b, c in [(9999,16,2), (9999,2,16), (255,8,10), (15,16,16)]:
-            def numeral(x, base):
-                if x == 0:
-                    return '0'
-                digits = []
-                for k in range(14, -1, -1):
-                    digits.append('0123456789ABCDEF'[(x // base**k) % base])
-                return ''.join(digits).lstrip('0')
-            add(f'{b} {c}\n{numeral(n,b)}\n', numeral(n,c))
+        def numeral(x):
+            digits = ''.join(chr(97 + x // 26**k % 26) for k in [2, 1, 0])
+            return digits.lstrip('a') or 'a'
+        for x, n in [(0, 25), (25, 0), (26, 675), (675, 676), (676, 9999), (9999, 26)]:
+            add(numeral(x) + f'\n{n}\n', f'{x}\n{numeral(n)}')
+    elif topic in ['dfs-state', 'bfs-state']:
+        for a, b in [(1, 100), (50, 100), (99, 100), (100, 1), (37, 37), (7, 25)]:
+            # Increasing states allow a numeric-order dynamic programming oracle.
+            d = [1000] * 101
+            d[a] = 0
+            for x in range(a, 101):
+                for y in [x + 1, x * 2]:
+                    if y <= 100:
+                        d[y] = min(d[y], d[x] + 1)
+            ans = ('YES' if d[b] < 1000 else 'NO') if topic == 'dfs-state' else (-1 if d[b] == 1000 else d[b])
+            add(f'{a} {b}\n', ans)
+    elif topic == 'dfs-grid':
+        for n, m in [(1, 20), (20, 1), (6, 7), (20, 20)]:
+            a = [[int(rng.random() > .4) for _ in range(m)] for _ in range(n)]
+            # Merge component labels independently of recursive traversal.
+            labels = {(i, j): i*m+j for i in range(n) for j in range(m) if a[i][j]}
+            for i, j in list(labels):
+                for pos in [(i+1, j), (i, j+1)]:
+                    if pos in labels:
+                        x, y = labels[i, j], labels[pos]
+                        labels = {p: x if v == y else v for p, v in labels.items()}
+            add(f'{n} {m}\n' + matrix(a), len(set(labels.values())))
+    elif topic == 'bfs-graph':
+        for n in [1, 5, 12, 100]:
+            edges = [(i, j) for i in range(n) for j in range(i+1, n) if rng.random() < .12]
+            d = [1000] * n
+            d[0] = 0
+            for _ in range(n):
+                for u, v in edges:
+                    d[u], d[v] = min(d[u], d[v]+1), min(d[v], d[u]+1)
+            add(f'{n} {len(edges)}\n' + matrix((u+1, v+1) for u, v in edges), -1 if d[-1] == 1000 else d[-1])
+    elif topic == 'recursion':
+        for n in range(11):
+            add(f'{n}\n', factorial(n))
     elif topic == 'combinatorics':
         for n, r in [(10,10), (10,0), (8,3)]:
             add(f'{n} {r}\n', f'{factorial(n)//factorial(n-r)}\n{comb(n,r)}')
@@ -107,13 +137,16 @@ def algorithm_cases(topic):
                     if all(x<y for x,y in zip(seq,seq[1:])):
                         best = max(best,len(seq))
                 add(f'{n}\n'+row(a), best)
+        if topic == 'lis':
+            add('1000\n'+row(range(1, 1001)), 1000)
+            add('1000\n'+row([7]*1000), 1)
     elif topic == 'parametric-search':
         for n in [1,5,10]:
             a = [rng.randint(1,40) for _ in range(n)]
             k = rng.randint(1,sum(a)+2)
             ans = max((x for x in range(1,max(a)+1) if sum(v//x for v in a)>=k),default=0)
             add(f'{n} {k}\n'+row(a), ans)
-    elif topic == 'greedy':
+    elif topic in ['greedy', 'interval-merging']:
         for n in [1,5,9]:
             a = [tuple(sorted(rng.sample(range(1,20),2))) for _ in range(n)]
             best = 0
@@ -124,7 +157,14 @@ def algorithm_cases(topic):
             covered = {x for l,r in a for x in range(l,r)}
             starts = sorted(x for x in covered if x-1 not in covered)
             ends = sorted(x+1 for x in covered if x+1 not in covered)
-            add(f'{n}\n'+matrix(a), f'{best}\n{len(starts)}\n'+matrix(zip(starts,ends)))
+            out = best if topic == 'greedy' else f'{len(starts)}\n'+matrix(zip(starts,ends))
+            add(f'{n}\n'+matrix(a), out)
+    elif topic == 'exchange-argument':
+        for n in [1, 4, 7]:
+            a = [rng.randint(1, 20) for _ in range(n)]
+            # Exhaust all orders instead of assuming the greedy ordering.
+            best = min(sum(sum(p[:i+1]) for i in range(n)) for p in permutations(a))
+            add(f'{n}\n'+row(a), best)
     elif topic in ['prefix-sum','difference-array']:
         for n in [1,9]:
             a = [rng.randint(1,100) for _ in range(n)]
@@ -156,9 +196,11 @@ def algorithm_cases(topic):
                 out.append(sum(a[i][j] for i in range(x1-1,x2) for j in range(y1-1,y2)))
             add(f'{n} {m} 15\n'+matrix(a)+matrix(queries), row(out))
     elif topic == 'dp-basics':
-        for n in [2,7,19]:
-            add(f'{n}\n', sum(comb(n-k,k) for k in range(n//2+1)))
-    elif topic in ['bfs','grid-dp']:
+        # Fibonacci's independent binomial-sum identity, with F_0 handled separately.
+        for n in range(21):
+            ans = 0 if n == 0 else sum(comb(n-1-k, k) for k in range((n-1)//2+1))
+            add(f'{n}\n', ans)
+    elif topic in ['bfs-grid','grid-dp']:
         for n,m in [(1,1),(3,4),(5,5)]:
             a = [[int(rng.random()>.25) for _ in range(m)] for _ in range(n)]
             a[0][0]=a[-1][-1]=1
@@ -183,7 +225,8 @@ def algorithm_cases(topic):
                                 if 0<=x<n and 0<=y<m and a[x][y]:
                                     d[x][y]=min(d[x][y],d[i][j]+1)
                 ans = -1 if d[-1][-1]==1000 else d[-1][-1]
-            add(f'{n} {m}\n'+''.join(''.join(map(str,r))+'\n' for r in a), ans)
+            grid_input = matrix(a) if topic == 'bfs-grid' else ''.join(''.join(map(str,r))+'\n' for r in a)
+            add(f'{n} {m}\n'+grid_input, ans)
     elif topic == 'knapsack':
         for n,w in [(1,8),(4,10),(6,15)]:
             a = [(rng.randint(2,8),rng.randint(1,20)) for _ in range(n)]
@@ -200,20 +243,22 @@ def algorithm_cases(topic):
             s=''.join(rng.choices('ABC',k=n))
             p=''.join(rng.choices('ABC',k=m))
             add(s+'\n'+p+'\n', max(map(len,subs(s)&subs(p))))
+        add('A'*100+'\n'+'A'*100+'\n', 100)
+        add('A'*100+'\n'+'B'*100+'\n', 0)
     elif topic == 'binomial':
         for n,r in [(30,15),(30,29),(1,0),(20,8)]:
             add(f'{n} {r}\n', comb(n,r))
-    elif topic in ['dfs','bipartite','topological-sort','kruskal']:
+    elif topic in ['dfs-graph','bipartite','topological-sort','kruskal']:
         for n in [1,4,6]:
             edges = [(i,j) for i in range(1,n+1) for j in range(i+1,n+1) if rng.random()<.5]
-            if topic in ['dfs','kruskal']:
+            if topic in ['dfs-graph','kruskal']:
                 def components(es):
                     labels=list(range(n+1))
                     for u,v in es:
                         x,y=labels[u],labels[v]
                         labels=[x if z==y else z for z in labels]
                     return len(set(labels[1:]))
-                if topic=='dfs':
+                if topic=='dfs-graph':
                     ans=components(edges)
                 else:
                     edges=[(u,v,rng.randint(1,20)) for u,v in edges]
@@ -287,7 +332,7 @@ def algorithm_cases(topic):
                             d[i][j]=min(d[i][j],d[i][k]+d[k][j])
                 ans=max(map(max,d))
             add(f'{n}\n'+matrix(edges),ans)
-    elif topic in ['palindrome','pattern-search','kmp']:
+    elif topic in ['palindrome','kmp']:
         for _ in range(6):
             s=''.join(rng.choices('AB',k=20))
             if topic=='palindrome':

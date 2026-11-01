@@ -22,7 +22,28 @@ ROOT = Path(__file__).resolve().parents[1]
 def differential_cases(topic):
     rng = random.Random(20260924)
     cases = []
-    if topic == 'priority-queue':
+    if topic == 'string':
+        for n in [1, 7, 100]:
+            s = ''.join(rng.choices('abcd', k=n))
+            for l, r in [(1, n), (n, n), (1, 1), (2, n-1)] if n > 2 else [(1, n)]:
+                out = ''.join(c for i, c in enumerate(s, 1) if l <= i <= r)
+                cases.append({'name': f'extract-{n}-{l}-{r}', 'input': f'{s}\n{l} {r}\n', 'output': out+'\n', 'compare': 'exact'})
+    elif topic == 'trie':
+        for n in [1, 20, 100]:
+            words = [''.join(rng.choice('abcdefghijklmnopqrstuvwxyz') for _ in range(20)) for _ in range(n)]
+            queries, expected = [], []
+            for i in range(100):
+                s = rng.choice(words)
+                if i % 3 == 0:
+                    s = s[:rng.randint(1, 19)]
+                elif i % 3 == 1:
+                    s = ''.join(rng.choice('abcdefghijklmnopqrstuvwxyz') for _ in range(20))
+                op = 'word' if i % 2 else 'prefix'
+                ok = s in words if op == 'word' else any(w.startswith(s) for w in words)
+                queries.append(f'{op} {s}')
+                expected.append('YES' if ok else 'NO')
+            cases.append({'name': f'word-list-oracle-{n}', 'input': f'{n} 100\n'+'\n'.join(words+queries)+'\n', 'output': '\n'.join(expected)+'\n'})
+    elif topic == 'priority-queue':
         for n in [1, 2, 37, 100000]:
             a = [rng.randint(1, 9999) for _ in range(n)]
             cases.append({'name': f'sorted-n{n}', 'input': str(n) + '\n' + ' '.join(map(str, a)) + '\n', 'output': ' '.join(map(str, sorted(a))) + '\n'})
@@ -91,6 +112,37 @@ def differential_cases(topic):
     return cases
 
 
+def valid_subsequence_output(topic, case, actual):
+    """Accept any optimal witness; verify its length, values, and original order."""
+    lines = actual.splitlines()
+    if len(lines) != 2:
+        return False
+    try:
+        length = int(lines[0])
+        if length != int(case['output'].split()[0]):
+            return False
+
+        def is_subsequence(seq, values):
+            i = 0
+            for x in values:
+                if i < len(seq) and seq[i] == x:
+                    i += 1
+            return i == len(seq)
+
+        if topic == 'lis':
+            seq = list(map(int, lines[1].split()))
+            values = list(map(int, case['input'].split()))[1:]
+            return (len(seq) == length
+                    and all(x < y for x, y in zip(seq, seq[1:]))
+                    and is_subsequence(seq, values))
+
+        a, b = case['input'].split()
+        seq = lines[1]
+        return len(seq) == length and is_subsequence(seq, a) and is_subsequence(seq, b)
+    except ValueError:
+        return False
+
+
 def run(command, **kwargs):
     result = subprocess.run(command, encoding='utf-8', errors='replace', capture_output=True, timeout=40, **kwargs)
     if result.returncode:
@@ -140,7 +192,10 @@ def main():
             cases = json.loads(case_path(category, topic).read_text(encoding='utf-8')) + (algorithm_cases(topic) if category == 'algorithms' else utility_cases(topic) if category == 'utilities' else differential_cases(topic))
             for case in cases:
                 actual = run(command, input=case['input'])
-                matches = actual == case['output'] if case.get('compare') == 'exact' else actual.split() == case['output'].split()
+                if category == 'algorithms' and topic in ['lis', 'lcs']:
+                    matches = valid_subsequence_output(topic, case, actual)
+                else:
+                    matches = actual == case['output'] if case.get('compare') == 'exact' else actual.split() == case['output'].split()
                 if not matches:
                     raise AssertionError(f"{language}/{topic}/{case['name']}\nExpected: {case['output']!r}\nActual: {actual!r}")
                 total += 1

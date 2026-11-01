@@ -1,10 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 
+int dp[101], un[101];
+
 int main() {
     int n, limit, i, c, w, v;
-    int dp[101] = {}, un[101] = {};
 
     cin >> n >> limit;
     for (i = 0; i < n; ++i) {

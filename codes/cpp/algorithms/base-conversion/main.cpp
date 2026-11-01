@@ -1,23 +1,29 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <string>
 
 using namespace std;
 
 int main() {
-    int b, c, x, d;
-    string s, out, digit = "0123456789ABCDEF";
+    string s, ans;
+    int n, x, r;
 
-    cin >> b >> c >> s;
+    cin >> s >> n;
     x = 0;
-    for (char ch : s) {
-        d = digit.find(ch);
-        x = x * b + d;
-    }
 
-    out = "";
-    do {
-        out += digit[x % c];
-        x /= c;
-    } while (x > 0);
-    reverse(out.begin(), out.end());
-    cout << out << '\n';
+    // 왼쪽부터 26진수의 자릿값을 누적함
+    for (char c : s) {
+        x = x * 26 + (c - 'a');
+    }
+    cout << x << '\n';
+
+    // 낮은 자리부터 구한 뒤 순서를 뒤집음
+    if (n == 0) ans = "a";
+    while (n > 0) {
+        r = n % 26;
+        ans += char('a' + r);
+        n /= 26;
+    }
+    reverse(ans.begin(), ans.end());
+    cout << ans << '\n';
 }

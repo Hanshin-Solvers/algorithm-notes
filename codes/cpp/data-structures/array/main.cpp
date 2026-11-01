@@ -2,8 +2,10 @@
 
 using namespace std;
 
+int a[5];
+
 int main() {
-    int a[5], i;
+    int i;
 
     for (i = 0; i < 5; ++i) {
         cin >> a[i];

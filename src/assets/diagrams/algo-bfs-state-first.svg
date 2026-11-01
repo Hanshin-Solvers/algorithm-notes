@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="527" height="410" viewBox="-27 -40 527 410" role="img" aria-label="상태 2에서 더하기 1 또는 곱하기 2로 처음 도달한 상태와 최소 연산 횟수" font-family="Nanum Gothic, sans-serif">
+
+
+<rect x="-27" y="-40" width="527" height="410" fill="white"/>
+<g>
+<line x1="229.49390334559013" y1="20.506096654409877" x2="160.50609665440987" y2="89.49390334559013" stroke="#505050" stroke-width="2"/>
+<polygon points="160.50609665440987,89.49390334559013 164.4558387354604,78.16255137448012 171.8374486255199,85.54416126453962" fill="#505050"/>
+<line x1="228.4332431738103" y1="19.445436482630054" x2="159.44543648263004" y2="88.43324317381031" stroke="#505050" stroke-width="2"/>
+<line x1="270.5060966544099" y1="20.506096654409877" x2="339.4939033455901" y2="89.49390334559013" stroke="#505050" stroke-width="2"/>
+<polygon points="339.4939033455901,89.49390334559013 328.16255137448013,85.54416126453962 335.54416126453964,78.16255137448012" fill="#505050"/>
+<line x1="269.44543648263004" y1="21.5667568261897" x2="338.4332431738103" y2="90.55456351736994" stroke="#505050" stroke-width="2"/>
+<line x1="130.08945117048557" y1="137.25400928116468" x2="109.91054882951443" y2="192.74599071883532" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="109.91054882951443,192.74599071883532 108.6978744595586,180.80742209138035 118.50854042120348,184.37493698652392" fill="#bdbdbd"/>
+<line x1="342.94302076742366" y1="133.45334644479246" x2="297.05697923257634" y2="196.54665355520754" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="297.05697923257634,196.54665355520754 299.191121368497,184.73795179152125 307.6336571172321,190.8779777906013" fill="#bdbdbd"/>
+<line x1="379.50751102589305" y1="131.45826212848237" x2="440.49248897410695" y2="198.54173787151763" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="440.49248897410695,198.54173787151763 429.3618326050618,194.05748890494198 437.08619490670105,187.03534135799717" fill="#bdbdbd"/>
+<line x1="100.0" y1="249.0" x2="100.0" y2="301.0" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="100.0,301.0 94.78041359066523,290.1946347717679 105.21958640933477,290.1946347717679" fill="#bdbdbd"/>
+<line x1="460.0" y1="249.0" x2="460.0" y2="301.0" stroke="#bdbdbd" stroke-width="2"/>
+<polygon points="460.0,301.0 454.78041359066526,290.1946347717679 465.21958640933474,290.1946347717679" fill="#bdbdbd"/>
+<circle cx="250" cy="0" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="243.33" y="7.70" font-size="22" fill="white">2</text>
+<circle cx="140" cy="110" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="133.33" y="117.70" font-size="22" fill="white">3</text>
+<circle cx="360" cy="110" r="27" fill="#505050" stroke="#505050" stroke-width="2"/>
+<text x="353.33" y="117.70" font-size="22" fill="white">4</text>
+<circle cx="100" cy="220" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="93.33" y="227.70" font-size="22" fill="#242424">6</text>
+<circle cx="280" cy="220" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="273.33" y="227.70" font-size="22" fill="#242424">5</text>
+<circle cx="460" cy="220" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="453.33" y="227.70" font-size="22" fill="#242424">8</text>
+<circle cx="100" cy="330" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="93.33" y="337.70" font-size="22" fill="#242424">7</text>
+<circle cx="460" cy="330" r="27" fill="white" stroke="#bdbdbd" stroke-width="2"/>
+<text x="453.33" y="337.70" font-size="22" fill="#242424">9</text>
+<text x="-15.45" y="6.30" font-size="18" fill="#666666">0</text>
+<text x="-15.45" y="116.30" font-size="18" fill="#666666">1</text>
+<text x="-15.45" y="226.30" font-size="18" fill="#666666">2</text>
+<text x="-15.45" y="336.30" font-size="18" fill="#666666">3</text>
+</g></svg>

@@ -1,10 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 
+bool prime[10000];
+
 int main() {
     int n, i, j;
-    bool prime[10000];
 
     cin >> n;
     fill(prime, prime + n + 1, true);

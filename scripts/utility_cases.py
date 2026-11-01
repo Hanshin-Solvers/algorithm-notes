@@ -41,15 +41,17 @@ def utility_cases(topic):
             add(f'{n}\n',f'{n}\n{n*(n-1)//2}\n')
     elif topic == 'division-modulo':
         for a,b in [(-9999,100),(-1,100),(1,100),(9999,100),(-9999,1),(0,1),(9999,1),(-100,100)]:
-            add(f'{a} {b}\n',f'{a//b} {-(-a//b)} {a%b}\n')
-    elif topic == 'type-conversion':
-        for s in ['0001','0100','9990','7']:
-            add(s+'\n',f'{int(s)}\n{sum(map(int,s))}\n',True)
-    elif topic == 'string-operations':
-        for n in [1,7,100]:
-            s=''.join(rng.choices('abcd',k=n))
-            for l,r in [(1,n),(n,n),(1,1)]:
-                add(s+f'\n{l} {r}\n',s[l-1:r]+'\n',True)
+            add(f'{a} {b}\n',f'{a%b}\n')
+    elif topic == 'decimal-formatting':
+        # 정수 계산으로 평균의 출력 자릿수와 올림·내림·반올림 검증
+        for scores in [(0, 0, 0), (100, 100, 100), (1, 0, 0), (1, 1, 0), (99, 100, 100), (12, 34, 56)]:
+            total = sum(scores)
+            for digits in [0, 1, 3, 6]:
+                scale = 10 ** digits
+                scaled = (total * scale + 1) // 3
+                fixed = str(scaled) if digits == 0 else f'{scaled // scale}.{scaled % scale:0{digits}d}'
+                up, down, near = (total + 2) // 3, total // 3, (total + 1) // 3
+                add(' '.join(map(str, (*scores, digits))) + '\n', f'{fixed}\n{up} {down} {near}\n', True)
     elif topic == 'container-operations':
         for n in [1,8,100]:
             a=[rng.randint(1,9999) for _ in range(n)]
@@ -69,13 +71,18 @@ def utility_cases(topic):
                     tmp[k]=str(new)
                     values.append(int(''.join(reversed(tmp)),2))
                 add(f'{x} {k}\n',row([bit]+values))
-    elif topic == 'grid-directions':
-        for n,m,r,c in [(1,10,1,10),(10,1,10,1),(10,10,10,10),(10,10,1,10),(10,10,10,1)]:
-            neighbors=[(r-1,c),(r,c+1),(r+1,c),(r,c-1)]
-            out=''.join(row([x,y]) for x,y in neighbors if 1<=x<=n and 1<=y<=m)
-            add(f'{n} {m}\n{r} {c}\n',out or 'NONE\n',True)
-    elif topic == 'debugging':
-        for n in [1,17,100]:
-            a=[rng.randint(1,9999) for _ in range(n)]
-            add(f'{n}\n'+row(a),f'{sum(a)}\n',True)
+    elif topic == 'priority-queue-ordering':
+        for n in [1, 20, 100]:
+            ids = rng.sample(range(1, 1001), n)
+            jobs = [(i, rng.randint(1, 5)) for i in ids]
+            expected = [i for i, p in sorted(jobs, key=lambda a: (a[1], a[0]))]
+            add(f'{n}\n'+''.join(f'{i} {p}\n' for i, p in jobs), row(expected))
+    elif topic == 'custom-hash':
+        for n in [1, 20, 100]:
+            points = [(rng.randrange(10), rng.randrange(10)) for _ in range(n)]
+            queries = [rng.choice(points) for _ in range(50)]
+            queries += [(rng.randrange(1000), rng.randrange(1000)) for _ in range(50)]
+            # Direct tuple comparison is independent of the C++ hash formula.
+            out = ''.join(f'{points.count(p)}\n' for p in queries)
+            add(f'{n} 100\n'+''.join(f'{x} {y}\n' for x, y in points+queries), out)
     return cases

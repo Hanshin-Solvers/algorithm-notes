@@ -25,10 +25,17 @@ class Page(HTMLParser):
         self.headings = []
         self.heading = None
         self.example_io = False
+        self.related_links = []
+        self.related_started = False
         self.feed(source)
 
     def handle_starttag(self, tag, pairs):
         a = dict(pairs)
+        if 'related-algorithms' in a.get('class', '').split(): self.related_started = True
+        if 'data-related-algorithm' in a:
+            self.related_links.append((a['data-related-algorithm'], a['href']))
+        if 'data-code-panel' in a:
+            assert not self.related_started, 'Related algorithms must follow the example code.'
         if tag == 'figcaption': self.caption = ''
         if tag in ['h2','h3']:
             self.heading = ''
@@ -86,13 +93,42 @@ def main():
                 assert unquote(parsed.fragment) in pages[target].ids, f'{path}: missing anchor {link}'
     topics = entries()
     config = json.loads((ROOT/'src/data/example-languages.json').read_text(encoding='utf-8'))
+    related = json.loads((ROOT/'src/data/related-algorithms.json').read_text(encoding='utf-8'))
+    all_topics = {topic for _, topic in topics}
+    for topic, targets in related.items():
+        assert topic in all_topics, f'Unknown related-link source: {topic}'
+        assert targets and len(targets) == len(set(targets)), f'{topic}: empty or duplicate related links'
+        assert topic not in targets and set(targets) <= all_topics, f'{topic}: invalid related topic'
+    graph_order = ['dijkstra', 'bellman-ford', 'floyd-warshall', 'kruskal', 'topological-sort', 'bipartite']
+    assert [topic for _, topic in topics if topic in graph_order] == graph_order, 'Graph algorithm order'
     code_count = 0
     for index, (category, topic) in enumerate(topics):
         enabled = config.get(topic, ['cpp', 'java', 'python'])
         code_count += len(enabled)
         page = pages[ROOT/'dist/notes'/category/topic/'index.html']
+        neighbors = set(related.get(topic, [])) | {source for source, targets in related.items() if topic in targets}
+        expected_related = [(target, BASE + f'notes/{target_category}/{target}/')
+                            for target_category, target in topics if target in neighbors]
+        assert page.related_links == expected_related, f'{topic}: related algorithm links'
+        for target, link in page.related_links:
+            target_page = pages[ROOT/'dist'/link[len(BASE):]/'index.html']
+            assert (topic, BASE + f'notes/{category}/{topic}/') in target_page.related_links, f'{topic} → {target}: missing reverse link'
+        if expected_related:
+            assert page.headings[-1] == '연관 문서', f'{topic}: related section must be last'
+        else:
+            assert not page.related_started, f'{topic}: empty related section'
         expected_images = 8 if topic == 'deque' else 6 if topic == 'priority-queue' else 4 if topic in ['array', 'dynamic-array', 'stack', 'queue'] else 3 if topic == 'graph-density' else 1 if topic in ['tree', 'bst', 'dag', 'weighted-graph'] else 2
-        if category != 'data-structures': expected_images = 0
+        if category == 'algorithms':
+            expected_images = {
+                'dfs-graph': 3, 'dfs-grid': 2, 'dfs-state': 2,
+                'bfs-graph': 3, 'bfs-grid': 2, 'bfs-state': 2,
+                'backtracking': 4, 'bipartite': 2, 'topological-sort': 5,
+                'dijkstra': 3, 'bellman-ford': 4, 'floyd-warshall': 3,
+                'kruskal': 3, 'ccw': 3, 'segment-intersection': 3,
+                'polygon-area': 4, 'convex-hull': 4, 'grid-dp': 3,
+            }.get(topic, 0)
+        elif category != 'data-structures':
+            expected_images = 0
         assert not page.images, f'{topic}: expected inline SVG instead of image element'
         assert len(page.diagrams) == expected_images, f'{topic}: missing inline diagram'
         assert len(page.captions) == expected_images, f'{topic}: missing figure caption'
@@ -110,6 +146,7 @@ def main():
             assert not any('예제' in heading for heading in page.headings), f'{topic}: conceptual page has example section'
         else:
             example_headings = ['예제', '문제', '입력', '출력', '예제 입력', '예제 출력', '예제 코드']
+            if expected_related: example_headings.append('연관 문서')
             start = page.headings.index('예제')
             assert page.headings[start:] == example_headings, f'{topic}: problem section order'
             assert page.example_io, f'{topic}: missing sample I/O'

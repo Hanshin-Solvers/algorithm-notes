@@ -1,0 +1,12 @@
+[
+  {
+    "name": "word-and-prefix",
+    "input": "3 6\ncar\ncat\ndog\nword car\nword ca\nprefix ca\nprefix do\nword cart\nprefix z\n",
+    "output": "YES\nNO\nYES\nYES\nNO\nNO\n"
+  },
+  {
+    "name": "terminal-and-duplicates",
+    "input": "4 5\na\nab\na\nz\nword a\nword ab\nprefix a\nword abc\nword z\n",
+    "output": "YES\nYES\nYES\nNO\nYES\n"
+  }
+]

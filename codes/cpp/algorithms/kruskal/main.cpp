@@ -1,11 +1,24 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <utility>
 
 using namespace std;
 
+struct edge {
+    int a, b, w;
+};
+
 int p[101], sz[101];
+vector<edge> edges;
+
+bool compare(const edge& x, const edge& y) {
+    return x.w < y.w;
+}
 
 int find(int x) {
     while (x != p[x]) {
+        // 조부모로 연결하여 대표까지의 경로 단축
         p[x] = p[p[x]];
         x = p[x];
     }
@@ -15,7 +28,9 @@ int find(int x) {
 bool unite(int a, int b) {
     a = find(a);
     b = find(b);
+    // 이미 같은 집합이면 간선 추가 시 사이클이 생기므로 제외
     if (a == b) return false;
+    // 작은 집합을 큰 집합 아래에 연결하도록 대표 교환
     if (sz[a] < sz[b]) swap(a, b);
     p[b] = a;
     sz[a] += sz[b];
@@ -24,7 +39,6 @@ bool unite(int a, int b) {
 
 int main() {
     int n, m, i, a, b, w, cnt, ans;
-    vector<array<int, 3>> edges;
 
     cin >> n >> m;
     for (i = 1; i <= n; ++i) {
@@ -33,19 +47,21 @@ int main() {
     }
     for (i = 0; i < m; ++i) {
         cin >> a >> b >> w;
-        edges.push_back({w, a, b});
+        edges.push_back({a, b, w});
     }
-    sort(edges.begin(), edges.end());
+    // 가중치가 작은 간선부터 검사
+    sort(edges.begin(), edges.end(), compare);
     cnt = 0;
     ans = 0;
 
     for (const auto& e : edges) {
-        if (unite(e[1], e[2])) {
-            ans += e[0];
+        if (unite(e.a, e.b)) {
+            ans += e.w;
             ++cnt;
         }
     }
 
+    // n-1개 간선을 선택했으면 모든 정점을 연결한 신장 트리 완성
     if (cnt == n - 1) cout << ans << '\n';
     else cout << "IMPOSSIBLE\n";
 }
